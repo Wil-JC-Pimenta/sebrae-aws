@@ -1,0 +1,784 @@
+Fundamentos de machine learning e inteligência artifical
+
+Introdução
+
+Neste curso, você aprenderá sobre os fundamentos de machine learning (ML) e inteligência artificial (IA). Você explorará as conexões entre IA, ML, aprendizado profundo e o campo emergente da inteligência artificial generativa (IA generativa), que chamou a atenção de empresas e indivíduos. Você desenvolverá uma compreensão sólida dos termos fundamentais da IA, estabelecendo as bases para uma análise mais aprofundada sobre esses conceitos. Além disso, você aprenderá sobre uma seleção de serviços da Amazon Web Services (AWS) que usam recursos de IA e ML. Você obterá informações práticas sobre como essas ferramentas podem ser usadas para resolver problemas reais e impulsionar a inovação em vários setores.
+
+Transcrição: Boas-Vindas
+
+Boas-vindas aos Fundamentos de Machine Learning e Inteligência Artificial, em que você explorará o mundo da IA generativa e do machine learning tradicional. Essa tecnologia está transformando rapidamente as indústrias e moldando o futuro da forma como interagimos com as máquinas.
+
+
+A IA generativa é um ramo da inteligência artificial que se concentra na criação de novos conteúdos, como texto, imagens, áudio ou até mesmo código de computador, com base em dados existentes. Diferentemente dos sistemas tradicionais de IA ou machine learning que analisam e interpretam dados, os modelos de IA generativa aprendem padrões e relacionamentos com grandes quantidades de dados de treinamento e usam esse conhecimento para gerar conteúdo totalmente novo.
+
+
+Uma das aplicações mais populares da IA generativa é a geração de texto, em que modelos como o Amazon Titan e o Claude, da Anthropic, podem produzir textos semelhantes aos humanos sobre praticamente qualquer tópico, de histórias criativas a relatórios técnicos. No campo da visão computacional, modelos de IA generativa, como o Stable Diffusion, podem criar imagens visuais impressionantes com base em simples instruções de texto.
+
+
+A IA generativa também está revolucionando o campo da síntese de áudio e fala. Os modelos de IA agora podem gerar vozes realistas semelhantes às humanas para assistentes virtuais, audiolivros e até podcasts. No campo da codificação, os modelos de IA generativa podem ajudar os desenvolvedores preenchendo automaticamente trechos de código ou até mesmo gerando programas inteiros com base em descrições de linguagem natural.
+
+
+Como acontece com qualquer tecnologia poderosa, a IA generativa também levanta importantes considerações de responsabilidade. Questões como vieses, privacidade e uso responsável desses modelos devem ser abordadas com cuidado para garantir que eles sejam implantados de maneira segura e confiável.
+
+
+Este curso fornecerá os princípios e conceitos por trás da inteligência artificial, do machine learning, do aprendizado profundo e da IA generativa. Você também descobrirá como os serviços da AWS podem desempenhar um papel importante na sua jornada de IA.
+
+Para compreender plenamente os recursos e o potencial da IA generativa, é crucial entender sua relação com os campos mais amplos de IA, machine learning e aprendizado profundo. Ao examinar as semelhanças e diferenças entre esses conceitos, podemos desenvolver uma compreensão mais abrangente do cenário tecnológico e das sinergias que impulsionam a inovação nesse domínio em rápida evolução.
+
+Inteligência artifical (IA) - 1
+
+A IA é um campo amplo que engloba o desenvolvimento de sistemas inteligentes capazes de realizar tarefas que normalmente requerem inteligência humana, como percepção, raciocínio, aprendizado, resolução de problemas, e tomada de decisão. A IA serve como um termo genérico para várias técnicas e abordagens, incluindo machine learning, aprendizado profundi e IA generativa, entre outras.
+
+Machine Learning (ML) - 2
+
+O ML é um tipo de IA para entender e criar métodos que possibilitam que as máquinas aprendam. Esses métodos usam dados para melhorar o desempenho do computador em um conjunto de tarefas.
+
+Aprendizado Profundo (DL) - 3
+
+O aprendizado profundo usa o conceito de neurônios e sinapses, semelhante à formar como nosso cérebro funciona. Um exemplo de aplicação de aprendizado profundo é o Amazon Rekognition, que pode analisar milhões de imagens, streaming e vídeos armazenados em segundos.
+
+IA Generativa - 4
+
+A IA generativa é um subconjunto do aprendizado profundo porque pode adaptar modelos criados usando o aprendizado profundo, mas sem retreinamento ou ajuste fino.
+
+Os sistemas de IA generativa são capazes de gerar novos dados com base nos padrões e estruturas aprendidos com os dados de treinamento.
+
+
+Agora que você tem uma compreensão da relação entre IA, ML, aprendizado profundo e IA generativa, continue com a próxima lição para aprender sobre os fundamentos de ML.
+
+Fundamentos de machine learning
+
+A criação de um modelo de machine learning envolve coleta e preparação de dados, seleção de um algoritmo apropriado, treinamento do modelo nos dados preparados e avaliação de seu desempenho por meio de testes e iteração.
+
+Dados de treinamento
+
+[DADOS DE TREINAMENTO] ----> [ALGORITMO DE ML] ----->[MODELO]
+
+Processo de construção de um modelo de aprendizado de máquina, começando com dados de treinamento.
+O processo de aprendizado de máquina começa com a coleta e o processamento de dados de treinamento. Dados incorretos geralmente são chamados de entrada e saída de lixo e, portanto, um modelo de ML é tão bom quanto os dados usados para treiná-lo. Embora a preparação e o processamento de dados às vezes sejam um processo rotineiro, esse é sem dúvida o estágio mais crítico para fazer todo o modelo funcionar conforme o esperado ou arruinar seu desempenho.
+
+Há vários tipos diferentes de dados usados no treinamento de um modelo de ML. Primeiro, é importante saber a diferença entre dados rotulados e não rotulados.
+
+Dados rotulados
+
+Os dados rotulados são um conjunto de dados em que cada instância ou exemplo é acompanhado por um rótulo ou variável de destino que representa a saída ou a classificação desejada. Esses rótulos geralmente são fornecidos por especialistas humanos ou obtidos por meio de um processo confiável.
+
+
+
+Exemplo: em uma tarefa de classificação de imagens, os dados rotulados consistiriam em imagens junto com seus rótulos de classe correspondentes (por exemplo, gato, cachorro, carro). 
+
+Dados não rotulados
+
+Os dados não rotulados são um conjunto de dados em que as instâncias ou exemplos não têm rótulos nem variáveis de destino associados. Os dados consistem somente em recursos de entrada, sem qualquer saída ou classificação correspondente.
+
+
+
+Exemplo: uma coleção de imagens sem rótulos ou anotações
+
+Os principais tipos de dados usados no treinamento são dados estruturados e não estruturados. Eles vêm com vários subtipos, que você pode encontrar expandindo as seguintes categorias.
+
+Dados Estruturados
+
+Dados estruturados se referem a dados organizados e formatados de forma predefinida, normalmente na forma de tabelas ou bancos de dados com linhas e colunas. Esse tipo de dado é adequado para algoritmos tradicionais de machine learning que exigem recursos e rótulos bem definidos. A seguir estão os tipos de dados estruturados.
+
+
+
+Dados tabulares: incluem dados armazenados em planilhas, bancos de dados ou arquivos CSV, com linhas representando instâncias e colunas representando características ou atributos.
+
+
+
+Dados de séries temporais: esse tipo de dado consiste em sequências de valores medidos em momentos sucessivos, como preços de ações, leituras de sensores ou dados meteorológicos.
+
+Dados não estruturados
+
+Dados não estruturados são dados que não têm uma estrutura ou formato predefinido, como texto, imagens, áudio e vídeo. Esse tipo de dado exige técnicas mais avançadas de machine learning para extrair padrões e informações significativos.
+
+
+
+Dados de texto: isso inclui documentos, artigos, publicações em mídias sociais e outros dados textuais.
+
+
+
+Dados de imagem: isso inclui imagens digitais, fotografias e quadros de vídeo.
+
+
+Processo de Machine Learning
+
+[DADOS DE TREINAMENTO] ----> [ALGORITMO DE ML] ----> [MODELO]
+
+Os dados de treinamento compilados são inseridos nos algoritmos de machine learning. O processo de aprendizado de ML é tradicionalmente dividido em três grandes categorias: aprendizado supervisionado, aprendizado não supervisionado e aprendizado por reforço.
+
+APRENDIZADO SUPERVISIONADO
+No aprendizado supervisionado, os algoritmos são treinados em dados rotulados. O objetivo é aprender uma função de mapeamento que possa prever a saída após a entrada de dados novos e não vistos anteriormente.
+
+APRENDIZADO NÃO SUPERVISIONADO
+O aprendizado não supervisionado se refere a algoritmos que aprendem com dados não rotulados. O objetivo é descobrir padrões, estruturas ou relacionamentos inerentes aos dados de entrada.
+
+APRENDIZADO POR REFORÇO
+No aprendizado por reforço, a máquina recebe apenas uma pontuação de desempenho como orientação e aprendizado semissupervisionado, em que apenas uma parte dos dados de treinamento é rotulada. O feedback é fornecido na forma de recompensas ou penalidades por suas ações, e a máquina aprende com esse feedback para melhorar sua tomada de decisão ao longo do tempo.
+
+Inferência
+
+[DADOS] ------>[ALGORITMO DE ML] --------> [MODELO]
+
+Depois que o modelo for treinado, é hora de começar o processo de usar as informações que um modelo aprendeu para fazer previsões ou tomar decisões. Isso é chamado de inferência.
+
+Existem dois tipos principais de inferência no machine learning: inferência em lote e inferência em tempo real.
+
+Inferência em lote
+
+A inferência em lote ocorre quando o computador pega uma grande quantidade de dados, como imagens ou texto, e os analisa de uma só vez para fornecer um conjunto de resultados. Esse tipo de inferência é frequentemente usado para tarefas como análise de dados, nas quais a velocidade do processo de tomada de decisão não é tão crucial quanto a precisão dos resultados.
+
+Inferência em tempo real
+
+A inferência em tempo real é quando o computador precisa tomar decisões rapidamente, em resposta às novas informações à medida que elas chegam. Isso é importante para aplicações em que a tomada de decisão imediata é fundamental, como em chatbots ou carros autônomos. O computador precisa processar os dados recebidos e tomar uma decisão quase instantaneamente, sem perder tempo analisando um grande conjunto de dados.
+
+Tanto a inferência em lote quanto a em tempo real têm suas próprias vantagens e casos de uso. Seu caso de uso determinará qual tipo de inferência você usa.
+
+Fundamentps do aprendizado profundo
+
+O campo do aprendizado profundo é inspirado na estrutura e função do cérebro. Envolve o uso de redes neurais artificiais, que são modelos computacionais projetados para imitar a forma como o cérebro humano processa as informações.
+
+Redes Neurais
+
+No centro do aprendizado profundo estão as redes neurais. Assim como nossos cérebros têm neurônios conectados uns aos outros, as redes neurais têm muitas unidades minúsculas chamadas nós que estão conectadas entre si. Esses nós são organizados em camadas. As camadas incluem uma camada de entrada, uma ou mais camadas ocultas e uma camada de saída.
+
+Camada de entrada     Camada oculta      Camada de saída
+
+                           ()
+()                         ()
+()                         ()
+()                         ()                  ()
+()                         ()
+                           ()
+
+
+Quando mostramos muitos exemplos a uma rede neural, como dados sobre clientes que compraram determinados produtos ou usaram determinados serviços, ela descobre como identificar padrões ajustando as conexões entre seus nós. É como se os nós estivessem conversando uns com os outros e lentamente descobrindo os padrões que separam os diferentes tipos de clientes.
+
+Quando uma rede neural aprende a reconhecer esses padrões a partir dos exemplos, ela pode analisar dados de clientes que nunca viu antes e ainda fazer previsões sobre o que eles podem comprar ou como podem se comportar.
+
+A seguir estão alguns ramos da IA em que o aprendizado profundo é usado para aprimorar os resultados.
+
+
+Visão Computacional
+
+A visão computacional é um campo da inteligência artificial que possibilita aos computadores interpretar e compreender imagens e vídeos digitais. O aprendizado profundo revolucionou a visão computacional ao fornecer técnicas poderosas para tarefas como classificação de imagens, detecção de objetos e segmentação de imagens.
+
+Processamento de linguagem natural
+
+O processamento de linguagem natural (PLN) é um ramo da inteligência artificial que lida com a interação entre computadores e linguagens humanas. O aprendizado profundo fez avanços significativos no PLN, possibilitando tarefas como classificação de texto, análise de sentimentos, tradução automática e geração de idiomas.
+
+Fundamentos da IA generativa
+
+O machine learning existe há décadas, o que levanta a questão: o que levou ao surgimento da IA generativa neste momento? A resposta é tão simples quanto grandes investimentos em recursos. A contratação de uma grande equipe, os gastos com recursos de computação e, principalmente, a disposição para investir e desenvolver grandes ideias contribuem para o crescimento da IA generativa.
+
+Modelos de base
+
+
+                       [PRÉ-TREINAR]                  [ADAPTAR]                                   -> Geração de texto
+[DADOS NÃO ROTULADOS]                [MODELO DE BASE]           [AMPLA GAMA DE TAREFAS GERAIS]    -> Resumo de textos
+                                                                                                  -> Extração de informações
+                                                                                                  -> Geração de imagens
+                                                                                                  -> Chatbot
+                                                                                                  -> Resposta a perguntas
+                                                                                                  
+A IA generativa é alimentada por modelos pré-treinados com o uso de dados de toda a internet e esses modelos são chamados de modelos de base (FMs). Com os FMs, em vez de coletar dados rotulados para cada modelo e treinar vários modelos, como no ML tradicional, você pode adaptar um único FM para realizar várias tarefas. Essas tarefas incluem geração de texto, resumo de texto, extração de informações, geração de imagens, interações com chatbots e resposta a perguntas. Os FMs também podem servir como ponto de partida para o desenvolvimento de modelos mais especializados.
+
+Ciclo de Vida do FM
+
+O ciclo de vida do modelo base é um processo abrangente que envolve vários estágios, cada um desempenhando um papel crucial no desenvolvimento e na implantação de modelos de base eficazes e confiáveis.
+
+Seleção de dados
+
+Os dados não rotulados podem ser usados em grande escala para o pré-treinamento, porque são muito mais fáceis de obter em comparação aos dados rotulados. Os dados não rotulados incluem dados brutos, como imagens, arquivos de texto ou vídeos, sem rótulos informativos significativos para fornecer contexto. Os FMs exigem treinamento em grandes conjuntos de dados de diversas fontes.
+
+Pré-treinamento
+
+Embora os modelos tradicionais de ML dependam de padrões de aprendizado supervisionado, não supervisionado ou por reforço, os FMs geralmente são pré-treinados por meio de aprendizado autossupervisionado. Com o aprendizado autossupervisionado, exemplos rotulados não são necessários. O aprendizado autossupervisionado usa a estrutura dos dados para gerar rótulos automaticamente.
+
+Durante o estágio inicial de pré-treinamento, o algoritmo do FM pode aprender o significado, o contexto e a relação das palavras nos conjuntos de dados. Por exemplo, o modelo pode aprender se colher significa o utensílio de mesa, um substantivo, ou fazer uma colheita, o verbo.
+
+Após o pré-treinamento inicial, o modelo pode ser pré-treinado com mais dados. Isso é conhecido como pré-treinamento contínuo. O objetivo é expandir a base de conhecimento do modelo e melhorar sua capacidade de entender e generalizar em diferentes domínios ou tarefas.
+
+Otimização
+
+Modelos de linguagem pré-treinados podem ser otimizados por meio de técnicas como engenharia de prompts, geração aumentada de recuperação (RAG) e ajuste fino de dados específicos de tarefas. Esses métodos variarão em complexidade e custo e serão discutidos posteriormente nesta lição.
+
+Avaliação
+
+Independentemente de você realizar o ajuste fino de um modelo ou usar um modelo pré-treinado pronto para uso, a próxima etapa lógica é avaliar o modelo. O desempenho de um FM pode ser medido usando métricas e benchmarks apropriados. A avaliação do desempenho do modelo e sua capacidade de atender às necessidades do negócio é importante.
+
+Implantação
+
+Quando o FM atende aos critérios de desempenho desejados, ele pode ser implantado no ambiente de produção pretendido. A implantação pode envolver a integração do modelo em aplicações, APIs ou outros sistemas de software.
+
+Feedback e melhoria contínua
+
+Após a implantação, o desempenho do modelo é monitorado continuamente e o feedback é coletado de usuários, especialistas da área ou outros stakeholders. Esse feedback, junto com os dados de monitoramento do modelo, é usado para identificar áreas de melhoria, detectar possíveis vieses ou desvios e embasar futuras iterações do modelo. O circuito de feedback permite o aprimoramento contínuo do modelo de base por meio de ajustes finos, pré-treinamento contínuo ou retreinamento, conforme necessário.
+
+O Amazon Bedrock fornece acesso a uma variedade de FMs de alto desempenho das principais empresas de IA, como AI21 Labs, Anthropic, Cohere, Meta, Mistral AI, Stability AI e Amazon.
+
+Com esses FMs como base, você pode otimizar ainda mais suas saídas com engenharia de prompts, ajuste fino ou RAG.
+
+Resumo
+
+É importante observar que o ciclo de vida do FM é um processo iterativo, em que as lições aprendidas e as informações obtidas em cada estágio podem embasar e aprimorar as iterações subsequentes.
+
+Existem alguns tipos de FMs que são essenciais para entender os recursos da IA generativa.
+
+Grandes modelos de linguagem
+
+Os grandes modelos de linguagem (LLMs) podem ser baseados em uma variedade de arquiteturas, mas a arquitetura mais comum nos modelos atuais de última geração é a arquitetura Transformer. Os LLMs baseados em Transformers são modelos poderosos que podem entender e gerar textos que parecem ter sido gerados por humanos. Eles são treinados em grandes quantidades de dados de texto da internet, de livros e de outras fontes e aprendem padrões e relações entre palavras e frases.
+
+Para entender melhor como os LLMs funcionam, escolha as guias a seguir para aprender sobre tokens, incorporações e vetores.
+
+Tokens
+
+s tokens são as unidades básicas de texto que o modelo processa. Tokens podem ser palavras, frases ou caracteres individuais, como um ponto final. Os tokens também fornecem padronização dos dados de entrada, o que facilita o processamento do modelo.
+
+
+
+Como exemplo, a frase “Um cachorrinho é para o cachorro como um gatinho é para o gato.” pode ser dividida nos seguintes tokens: “Um” “cachorrinho” “é” “para” “o” “cachorro” “como” “um” “gatinho” “é” “para” “o” “gato”. 
+
+Os LLMs usam esses tokens, incorporações e vetores para entender e gerar texto. Os modelos podem capturar relacionamentos complexos na linguagem, para que possam gerar texto coerente e contextualmente apropriado, responder perguntas, resumir informações e até mesmo se engajar na escrita criativa.
+
+Modelos de difusão
+
+A difusão é um sistema de arquitetura de aprendizado profundo que começa com ruído puro ou dados aleatórios. Os modelos gradualmente adicionam mais e mais informações significativas a esse ruído até obterem uma saída clara e coerente, como uma imagem ou um trecho de texto. Os modelos de difusão aprendem por meio de um processo de duas etapas de difusão direta e difusão reversa.
+
+Difusão direta
+Usando a difusão direta, o sistema introduz gradualmente uma pequena quantidade de ruído em uma imagem de entrada até que apenas o ruído permaneça.
+
+Difusão reversa
+Na etapa de difusão reversa subsequente, a imagem ruidosa é gradualmente introduzida na eliminação de ruído até que uma nova imagem seja gerada.
+
+Embora algumas das aplicações mais conhecidas e impressionantes dos modelos de difusão tenham sido modelos de texto para imagem, os modelos de difusão podem ser aplicados a uma variedade de tarefas além da geração de imagens.
+
+Modelos multimodais
+
+Em vez de depender apenas de um único tipo de entrada ou saída, como texto ou imagens, os modelos multimodais podem processar e gerar vários modos de dados simultaneamente. Por exemplo, um modelo multimodal pode receber uma imagem e algum texto como entrada e, em seguida, gerar uma nova imagem e uma legenda descrevendo-a como saída.
+
+Esses tipos de modelos aprendem como diferentes modalidades, como imagens e texto, estão conectadas e podem influenciar umas às outras. Modelos multimodais podem ser usados para automatizar a legendagem de vídeo, criar gráficos com base em instruções de texto, responder perguntas de forma mais inteligente combinando texto e informações visuais e até mesmo traduzir conteúdo, mantendo os recursos visuais relevantes.
+
+Outros modelos generativos
+
+Existem vários tipos de modelos generativos usados em ML e IA. Expanda as guias a seguir para saber mais sobre dois desses modelos generativos ainda não abordados nesta lição.
+
+Redes adversárias generativas(GANs)
+
+As GANs são um tipo de modelo generativo que envolve duas redes neurais competindo entre si em uma estrutura de jogo de soma zero. As duas redes são geradoras e discriminadoras.
+
+Geradora: essa rede gera novos dados sintéticos (por exemplo, imagens, texto ou áudio) pegando ruídos aleatórios como entrada e transformando-os em dados que se assemelham à distribuição de dados de treinamento.
+
+Discriminadora: essa rede obtém dados reais do conjunto de treinamento e dados sintéticos gerados pela geradora como entrada. Seu objetivo é distinguir entre os dados reais e os gerados.
+
+Durante o treinamento, a geradora tenta gerar dados que possam enganar a discriminadora, levando-a a pensar que são reais, enquanto a discriminadora tenta classificar corretamente os dados reais e os gerados. Esse processo contraditório continua até que a geradora produza dados indistinguíveis dos dados reais.
+
+Codificadores automáticos variacionais(VAEs)
+
+Os VAEs são um tipo de modelo generativo que combina ideias de codificadores automáticos (um tipo de rede neural) e inferência variacional (uma técnica da estatística bayesiana). Em um VAE, o modelo consiste em duas partes:
+
+Codificadora: essa rede neural pega os dados de entrada (por exemplo, uma imagem) e os mapeia para um espaço latente de menor dimensão, que captura as características essenciais dos dados.
+
+Decodificadora: essa rede neural pega a representação latente da codificadora e gera uma reconstrução dos dados de entrada originais.
+
+O principal aspecto dos VAEs é que o espaço latente é incentivado a seguir uma distribuição de probabilidade específica (geralmente uma distribuição gaussiana), o que permite gerar novos dados por meio da amostragem desse espaço latente e da passagem das amostras pela decodificadora.
+
+Otimizando as saídas do modelo
+
+Uma parte fundamental do ciclo de vida do modelo de base é a fase de otimização. Um FM pode ser otimizado ainda mais de várias maneiras diferentes. Essas técnicas variam em complexidade e custo, com a opção mais rápida e de menor custo sendo a engenharia de prompts.
+
+Engenharia de prompts
+
+Os prompts funcionam como instruções para modelos de base. A engenharia de prompts se concentra no desenvolvimento, projeto e otimização de prompts para aprimorar os resultados obtidos dos FMs de acordo com suas necessidades. Ela oferece uma maneira de orientar o comportamento do modelo de acordo com os resultados que você deseja alcançar.
+
+A forma do prompt depende da tarefa que você está atribuindo a um modelo. Ao explorar exemplos de engenharia de prompts, você analisará os prompts contendo alguns ou todos os seguintes elementos:
+
+•
+Instruções: essa é uma tarefa para o FM realizar. É fornecida uma descrição da tarefa ou instruções sobre o desempenho do modelo.
+
+•
+Contexto: essa é uma informação externa para orientar o modelo.
+
+•
+Dados de entrada: é a entrada para a qual você deseja obter uma resposta.
+
+•
+Indicador de saída: esse é o tipo ou formato de saída.
+
+Veja a seguir um exemplo de um prompt que pode ser fornecido a um FM.
+
+Exemplo de prompt
+Você é um jornalista experiente que se destaca em condensar artigos longos em resumos concisos. Resuma o texto a seguir em duas a três frases.
+Texto: [Aqui vai o texto longo do artigo]
+
+Ajuste fino
+
+Embora os FMs sejam pré-treinados por meio de aprendizado autossupervisionado e tenham a capacidade inerente de entender as informações, o ajuste fino do modelo de base do FM pode melhorar o desempenho. O ajuste fino é um processo de aprendizado supervisionado que envolve usar um modelo pré-treinado e adicionar conjuntos de dados menores e específicos. Adicionar esses conjuntos de dados mais restritos modifica os pesos dos dados para melhor alinhá-los à tarefa.
+
+Há duas maneiras de realizar o ajuste fino de um modelo:
+
+O ajuste fino de instruções usa exemplos de como o modelo deve responder a uma instrução específica. O ajuste de prompt é um tipo de ajuste fino de instruções.
+
+•
+O aprendizado por reforço com base no feedback humano (RLHF) fornece dados de feedback humano, resultando em um modelo mais alinhado às preferências humanas.
+
+Considere esse caso de uso para ajuste fino. Se você estiver trabalhando em uma tarefa que exige conhecimento do setor, poderá usar um modelo pré-treinado e realizar o ajuste fino dele usando dados do setor. Se a tarefa envolver pesquisa médica, por exemplo, o ajuste fino do modelo pré-treinado poderá ser feito com artigos de periódicos médicos para obter resultados mais contextualizados.
+
+Geração aumentada de recuperação
+
+A geração aumentada de recuperação (RAG) é uma técnica que fornece dados relevantes ao domínio como contexto para produzir respostas com base nesses dados. Essa técnica é semelhante ao ajuste fino. No entanto, em vez de ter que realizar o ajuste fino de um FM com um pequeno conjunto de exemplos rotulados, a RAG recupera um pequeno conjunto de documentos relevantes e os usa para fornecer contexto e responder ao prompt do usuário. A RAG não alterará os pesos do modelo de base, mas o ajuste fino sim.
+
+Teste de conhecimento
+
+Pergunta 1)
+Uma empresa quer desenvolver um sistema que possa reconhecer e classificar com precisão os algarismos manuscritos em imagens.
+
+Qual das opções a seguir descreve melhor o uso de redes neurais para essa tarefa?
+
+[ ]As redes neurais são um tipo de algoritmo de árvore de decisão que pode ser treinado em dados de imagem para criar um conjunto de regras para classificar algarismos manuscritos.
+
+[ ]As redes neurais são uma forma de regressão linear que pode ser usada para mapear valores de pixels de imagens para rótulos de algarismos correspondentes.
+
+[x]As redes neurais são um tipo de modelo de aprendizado profundo inspirado na estrutura e função do cérebro humano. Elas consistem em nós interconectados que podem aprender a reconhecer padrões nos dados, como imagens de algarismos manuscritos.
+
+[ ]As redes neurais são um tipo de sistema de banco de dados que pode armazenar e recuperar imagens de algarismos manuscritos com base em seus valores de pixels e rótulos associados.
+
+Pergunta 2)
+Uma empresa está desenvolvendo um sistema de inteligência artificial (IA) para controlar um carro autônomo. O sistema aprende por meio de interações de tentativa e erro com o ambiente da condução, recebendo recompensas por ações seguras e eficientes.
+
+Qual abordagem de machine learning (ML) está sendo usada nesse cenário?
+
+[ ] Aprendizado supervisionado
+
+[x] Aprendizado por reforço
+
+[ ] Aprendizado não supervisionado
+
+[ ] Aprendizado autosupervisionado
+
+Pergunta 3)
+Uma empresa está desenvolvendo um grande modelo de linguagem (LLM) para tarefas de processamento de linguagem natural, como geração de texto, resumo e resposta a perguntas.
+
+Qual das opções a seguir descreve melhor o papel das incorporações, no contexto dos LLMs?
+
+[x] As incorporações são representações numéricas de palavras ou símbolos, em que palavras semanticamente semelhantes têm representações vetoriais semelhantes.
+
+[ ]As incorporações são as técnicas de pré-processamento usadas para limpar e tokenizar os dados de texto antes de inseri-los no LLM para treinamento ou inferência.
+
+[ ]As incorporações são os métodos de conjunto usados para combinar vários LLMs para melhorar o desempenho geral e a robustez do sistema.
+
+[ ]As incorporações são as regras linguísticas e os padrões gramaticais extraídos dos dados de texto para ajudar o LLM a entender e gerar a linguagem.
+
+Pergunta 4)
+Uma empresa pré-treinou um grande modelo de linguagem em um vasto corpus de dados de texto. Eles querem adaptar esse modelo pré-treinado para realizar tarefas específicas, como análise de sentimentos e resumo de documentos.
+
+Qual das opções a seguir descreve melhor o processo de ajuste fino?
+
+[ ]O ajuste fino envolve o treinamento do modelo de linguagem pré-treinado do zero.
+
+[x]O ajuste fino se refere ao processo de treinamento adicional do modelo de linguagem pré-treinado em dados rotulados para as tarefas específicas.
+
+[ ]O ajuste fino é uma técnica usada para pré-processar e limpar os dados específicos da tarefa antes de inseri-los no modelo de linguagem pré-treinado.
+
+[ ]O ajuste fino é um método de conjunto que combina o modelo de linguagem pré-treinado com modelos específicos de tarefas para melhorar o desempenho geral.
+
+Pergunta 5)
+Uma equipe tem a tarefa de escolher um modelo de inteligência artificial (IA) generativa que possa reconhecer e interpretar diferentes formas de dados de entrada, como texto, imagens e áudio.
+
+Qual das arquiteturas de modelo a seguir é mais adequada para essa tarefa?
+
+[ ]Grande modelo de linguagem
+
+[ ]Modelo de difusão
+
+[x]Modelo Multimodal
+
+[ ]Modelo de base
+
+Infraestrutura e tecnologias da AWS
+
+A AWS oferece um conjunto abrangente de serviços de ML e IA generativa que podem ajudar você a liberar todo o potencial dessas tecnologias transformadoras.
+
+Nesta lição, você aprenderá sobre os vários serviços de IA e ML disponíveis na AWS, desde a compreensão de texto com o Amazon Comprehend até a geração de código com o Amazon Q Developer. Você obterá uma ampla compreensão dos recursos de cada serviço e de como eles podem ser usados para criar aplicações inovadoras e inteligentes.
+
+Você também explorará as vantagens de usar os serviços de IA generativa da AWS e os benefícios da infraestrutura da AWS ao desenvolver aplicações de IA generativa. Por fim, você conhecerá as vantagens e desvantagens de custos e as considerações que você deve ter em mente ao usar essas ferramentas poderosas.
+
+Pilha de serviços de IA/ML da AWS
+
+Transcrição: serviços de IA/ML da AWS
+
+Neste vídeo, você conhecerá a infraestrutura de IA ML da AWS e as diferentes camadas e domínios para criar aplicações usando essas tecnologias de IA ML.
+
+ 
+
+A pilha começa na camada de estruturas de ML. No centro dessa camada está o Amazon SageMaker. O SageMaker é um serviço de machine learning totalmente gerenciado que você pode usar para criar, treinar e implantar seus próprios modelos personalizados. O SageMaker fornece ferramentas e infraestrutura para acelerar seu ciclo de vida de desenvolvimento e implantação de ML.
+
+ 
+
+Em seguida, está a camada de serviços de IA ML, em que você encontra uma grande variedade de serviços especializados personalizados para diferentes casos de uso. No domínio de textos e documentos, há o Amazon Comprehend para processamento de linguagem natural, o Amazon Translate para tradução de idiomas e o Amazon Textract para extrair dados de documentos digitalizados.
+
+ 
+
+Para chatbots, a AWS oferece o Amazon Lex, que você pode usar para criar interfaces de conversação com as mesmas tecnologias de aprendizado profundo que impulsionam o Amazon Alexa. No domínio da fala, você pode encontrar o Amazon Polly para conversão de texto em fala e o Amazon Transcribe para reconhecimento automático de voz.
+
+ 
+
+No domínio da visão, você tem o Amazon Rekognition, um serviço de visão computacional baseado em aprendizado profundo que pode analisar imagens e vídeos para uma ampla variedade de aplicações. Para pesquisa, o Amazon Kendra reinventa a pesquisa corporativa de sites e aplicações para que as pessoas possam encontrar facilmente o conteúdo que estão procurando.
+
+ 
+
+No domínio de recomendações, temos o Amazon Personalize para personalização e recomendações em tempo real. Finalmente, na categoria “diversos”, há o AWS DeepRacer, um carro de corrida totalmente autônomo em escala 1/18 que permite que você tenha experiência prática com aprendizado por reforço.
+
+ 
+
+A AWS oferece ainda mais na camada de IA generativa. Você encontrará um conjunto de serviços e ferramentas que revelam o poder dos modelos básicos. Isso inclui o Amazon SageMaker JumpStart, que fornece um conjunto de soluções para os casos de uso mais comuns.
+
+O Amazon Bedrock é um serviço totalmente gerenciado que disponibiliza FMs da Amazon e das principais startups de IA por meio de uma API. Com o Amazon Bedrock, você pode começar rapidamente, experimentar FMs, personalizá-las de forma privada com seus próprios dados e integrar e implantar facilmente FMs em aplicações da AWS. Se preferir experimentar a criação de aplicações de IA, você pode obter experiência prática usando o PartyRock, um Playground do Amazon Bedrock.
+
+Finalmente, você tem aplicações como o Amazon Q, um assistente desenvolvido com IA generativa projetado para o trabalho que pode ser personalizado para os dados de uma empresa. E há o Amazon Q Developer, que fornece recomendações de código baseadas em ML para acelerar o desenvolvimento em uma variedade de linguagens de programação e aplicações.
+
+ 
+
+Cada um desses serviços foi projetado para capacitar você a aproveitar o potencial da IA e do ML, impulsionando a inovação, a eficiência e o crescimento.
+
+Transcrição: servicos de IA/ML da AWS
+
+Neste vídeo, você conhecerá a infraestrutura de IA ML da AWS e as diferentes camadas e domínios para criar aplicações usando essas tecnologias de IA ML.
+
+ 
+
+A pilha começa na camada de estruturas de ML. No centro dessa camada está o Amazon SageMaker. O SageMaker é um serviço de machine learning totalmente gerenciado que você pode usar para criar, treinar e implantar seus próprios modelos personalizados. O SageMaker fornece ferramentas e infraestrutura para acelerar seu ciclo de vida de desenvolvimento e implantação de ML.
+
+ 
+
+Em seguida, está a camada de serviços de IA ML, em que você encontra uma grande variedade de serviços especializados personalizados para diferentes casos de uso. No domínio de textos e documentos, há o Amazon Comprehend para processamento de linguagem natural, o Amazon Translate para tradução de idiomas e o Amazon Textract para extrair dados de documentos digitalizados.
+
+ 
+
+Para chatbots, a AWS oferece o Amazon Lex, que você pode usar para criar interfaces de conversação com as mesmas tecnologias de aprendizado profundo que impulsionam o Amazon Alexa. No domínio da fala, você pode encontrar o Amazon Polly para conversão de texto em fala e o Amazon Transcribe para reconhecimento automático de voz.
+
+ 
+
+No domínio da visão, você tem o Amazon Rekognition, um serviço de visão computacional baseado em aprendizado profundo que pode analisar imagens e vídeos para uma ampla variedade de aplicações. Para pesquisa, o Amazon Kendra reinventa a pesquisa corporativa de sites e aplicações para que as pessoas possam encontrar facilmente o conteúdo que estão procurando.
+
+ 
+
+No domínio de recomendações, temos o Amazon Personalize para personalização e recomendações em tempo real. Finalmente, na categoria “diversos”, há o AWS DeepRacer, um carro de corrida totalmente autônomo em escala 1/18 que permite que você tenha experiência prática com aprendizado por reforço.
+
+ 
+
+A AWS oferece ainda mais na camada de IA generativa. Você encontrará um conjunto de serviços e ferramentas que revelam o poder dos modelos básicos. Isso inclui o Amazon SageMaker JumpStart, que fornece um conjunto de soluções para os casos de uso mais comuns.
+
+O Amazon Bedrock é um serviço totalmente gerenciado que disponibiliza FMs da Amazon e das principais startups de IA por meio de uma API. Com o Amazon Bedrock, você pode começar rapidamente, experimentar FMs, personalizá-las de forma privada com seus próprios dados e integrar e implantar facilmente FMs em aplicações da AWS. Se preferir experimentar a criação de aplicações de IA, você pode obter experiência prática usando o PartyRock, um Playground do Amazon Bedrock.
+
+Finalmente, você tem aplicações como o Amazon Q, um assistente desenvolvido com IA generativa projetado para o trabalho que pode ser personalizado para os dados de uma empresa. E há o Amazon Q Developer, que fornece recomendações de código baseadas em ML para acelerar o desenvolvimento em uma variedade de linguagens de programação e aplicações.
+
+ 
+
+Cada um desses serviços foi projetado para capacitar você a aproveitar o potencial da IA e do ML, impulsionando a inovação, a eficiência e o crescimento.
+
+A AWS inova rapidamente em todo o conjunto de IA e ML, oferecendo recursos abrangentes, desde infraestrutura e ferramentas até aplicações inovadoras, como codificação baseada em IA. Os clientes valorizam a abordagem da AWS que prioriza os dados, a segurança e a variedade de ofertas de nível corporativo que abrangem todas as camadas.
+
+//-------Frameworks de ML----------//
+
+Amazon SageMaker
+A camada de frameworks de ML desempenha um papel crucial no desenvolvimento e na implantação de modelos de machine learning. No centro da camada de frameworks está o Amazon SageMaker. O SageMaker oferece as ferramentas certas para criar, treinar e executar LLMs e outros FMs de forma eficiente e econômica. Escolha a guia a seguir para saber mais sobre esse serviço.
+
+Com o SageMaker, você pode criar, treinar e implantar modelos de ML para qualquer caso de uso com infraestrutura, ferramentas e fluxos de trabalho totalmente gerenciados. O SageMaker remove o trabalho complexo de cada etapa do processo de ML, facilitando o desenvolvimento de modelos de alta qualidade. O SageMaker fornece todos os componentes usados para ML em um único conjunto de ferramentas, para que os modelos cheguem à produção mais rapidamente, com muito menos esforço e menor custo.
+
+Serviços de IA/ML
+
+
+Texto e documentos:
+
+Amazon Comprehend | Amazon Translate | Amazon Textract
+
+Chatbots:
+
+Amazon Lex | 
+
+Fala:
+
+Amazon Polly | Amazon Transcribe
+
+Visão:
+
+Amazon Rekognition
+
+Amazon Kendra
+
+Recomendações: 
+
+Amazon Personalize
+
+Amazon DeepRacer
+
+A AWS fornece uma camada robusta de serviços de IA/ML, oferecendo soluções prontas para uso, como o Amazon Comprehend para tarefas de processamento de linguagem natural e o Amazon Kendra para pesquisa inteligente em dados organizacionais. Essa camada inclui uma ampla variedade de serviços que fornecem aos desenvolvedores recursos de IA/ML sem exigir amplo gerenciamento de infraestrutura ou conhecimento especializado. Escolha as guias a seguir para saber mais sobre esses serviços.
+
+Amazon Comprehend
+
+O Amazon Comprehend usa ML e processamento de linguagem natural (PLN) para ajudar você a descobrir as informações e as relações em seus dados não estruturados. Esse serviço executa as seguintes funções:
+
+Identifica o idioma do texto
+Extrai frases-chave, lugares, pessoas, marcas ou eventos
+Entende o quão positivo ou negativo o texto é
+Analisa texto usando tokenização e partes do discurso
+E organiza automaticamente uma coleção de arquivos de texto por tópico
+
+Amazon Translate
+
+O Amazon Translate é um serviço de tradução automática neural que oferece tradução de idiomas rápida, de alta qualidade e acessível. A tradução automática neural é um tipo de automação de tradução de idiomas que usa modelos de aprendizado profundo para entregar traduções que soam mais precisas e naturais do que as oferecidas por algoritmos de tradução tradicionais estatísticos e baseados em regras. Com o Amazon Translate, você pode localizar conteúdo, como sites e aplicações, para seus diversos usuários, traduzir grandes volumes de texto para análise e implementar com eficiência a comunicação multilíngue entre os usuários.
+
+Amazon Texttract
+
+O Amazon Textract é um serviço que extrai automaticamente texto e dados de documentos digitalizados. O Amazon Textract vai além do reconhecimento óptico de caracteres (OCR) para também identificar o conteúdo dos campos em formulários e as informações armazenadas em tabelas.
+
+Amazon Lex
+
+O Amazon Lex é um serviço de IA totalmente gerenciado para projetar, criar, testar e implantar interfaces de conversação em qualquer aplicação usando voz e texto. O Amazon Lex fornece recursos avançados de aprendizado profundo de reconhecimento automático de fala (ASR) para converter fala em texto, e compreensão de linguagem natural (NLU) para reconhecer a intenção do texto. Isso permite que você crie aplicações com experiências do usuário altamente envolventes e interações de conversação realistas, além de criar novas categorias de produtos. Com o Amazon Lex, as mesmas tecnologias de aprendizado profundo que potencializam o Amazon Alexa agora estão disponíveis para qualquer desenvolvedor. Você pode criar com eficiência bots de conversação sofisticados em linguagem natural e sistemas de resposta de voz interativa (IVR) habilitados por voz.
+
+Amazon Polly
+
+O Amazon Polly é um serviço que transforma texto em fala realista. O Amazon Polly permite criar aplicações que falam, para que você possa criar categorias totalmente novas de produtos habilitados para fala. O Amazon Polly é um serviço de IA que usa tecnologias avançadas de aprendizado profundo para sintetizar uma fala que soa como uma voz humana. O Amazon Polly inclui uma ampla seleção de vozes realistas em dezenas de idiomas, para que você possa selecionar a voz ideal e criar aplicações habilitadas para fala que funcionem em muitos países diferentes.
+
+Amazon Transcribe
+
+O Amazon Transcribe é um serviço de reconhecimento automático de fala (ASR) para converter automaticamente fala em texto. O serviço pode transcrever arquivos de áudio armazenados em formatos comuns, como WAV e MP3, com registros de data e hora para cada palavra, para que você possa localizar rapidamente o áudio na fonte original pesquisando o texto. Você também pode enviar um stream de áudio ao vivo para o Amazon Transcribe e receber um stream de transcrições em tempo real. O Amazon Transcribe foi projetado para lidar com uma ampla variedade de características acústicas e de fala, incluindo variações de volume, tom e velocidade de fala. Os clientes podem usar o Amazon Transcribe para uma variedade de aplicações comerciais, incluindo as seguintes:
+
+Transcrição de chamadas de atendimento ao cliente baseadas em voz
+Geração de legendas em conteúdo de áudio e vídeo
+Realização de análise de conteúdo (baseada em texto) em conteúdo de áudio e vídeo
+
+Amazon Rekognition
+
+O Amazon Rekognition facilita a adição de análises de imagens e vídeos às suas aplicações. Ele usa tecnologia de aprendizado profundo comprovada, altamente dimensionável e que não requer experiência em ML para ser usada. Com o Amazon Rekognition, você pode identificar objetos, pessoas, textos, cenas e atividades em imagens e vídeos e até mesmo detectar conteúdo impróprio. O Amazon Rekognition também fornece recursos de análise facial e pesquisa facial altamente precisos. Você pode usá-lo para detectar, analisar e comparar faces para uma ampla variedade de casos de uso de verificação de usuários, contagem de pessoas e segurança pública.
+
+Amazon Kendra
+
+O Amazon Kendra é um serviço de pesquisa inteligente baseado em ML. O Amazon Kendra reinventa a pesquisa corporativa para seus sites e aplicações. Seus funcionários e clientes podem encontrar convenientemente o conteúdo que estão procurando, mesmo quando ele está espalhado por vários locais e repositórios de conteúdo em sua organização.
+
+O Amazon Personalize é um serviço de ML que os desenvolvedores podem usar para criar recomendações individualizadas para clientes que usam suas aplicações.
+
+Amazon Personalize
+
+Com o Amazon Personalize, você fornece um fluxo de atividades da sua aplicação (visualizações de página, inscrições, compras etc.). Você também fornece um inventário dos itens que deseja recomendar, como artigos, produtos, vídeos ou músicas. Você pode optar por fornecer ao Amazon Personalize informações demográficas adicionais de seus usuários, como idade ou localização geográfica. O Amazon Personalize processa e examina os dados, identifica o que é significativo, seleciona os algoritmos corretos e treina e otimiza um modelo de personalização de acordo com seus dados.
+
+AWS DeepRacer
+
+O AWS DeepRacer é um carro de corrida em escala 1/18 que oferece uma maneira interessante e divertida de começar a usar o aprendizado por reforço (RL). O RL é uma técnica avançada de ML que adota uma abordagem muito diferente de modelos de treinamento em relação a outros métodos de ML. Seu superpoder é que ele aprende comportamentos muito complexos sem exigir nenhum dado de treinamento rotulado e pode tomar decisões de curto prazo enquanto otimiza para um objetivo de longo prazo.
+
+IA Generativa
+
+AmazonSagemaker JumpStart | Amazon Bredrock | Amazon Q | Amazon Q Developer
+
+A camada de serviços de IA generativa na pilha de IA e ML oferece um conjunto de ferramentas e serviços poderosos projetados especificamente para tarefas de IA generativa. Essa camada inclui serviços como o SageMaker JumpStart para acelerar o desenvolvimento e a implantação de modelos. O Amazon Bedrock oferece uma variedade de FMs de alto desempenho das principais empresas de IA por meio de uma única API. Com esses serviços, desenvolvedores e organizações podem aproveitar os recursos dos modelos de IA generativa, abrindo novas possibilidades para criação de conteúdo, síntese de dados e experiências interativas de IA. Escolha as guias a seguir para saber mais sobre esses serviços.
+
+Amazon SageMaker JumpStart
+
+O SageMaker JumpStart ajuda você a começar a usar o ML rapidamente. Para facilitar o início, o SageMaker JumpStart fornece um conjunto de soluções para os casos de uso mais comuns, que podem ser facilmente implantadas. As soluções são totalmente personalizáveis e mostram o uso de modelos e arquiteturas de referência do AWS CloudFormation para que você possa acelerar sua jornada de ML. O SageMaker JumpStart também oferece suporte à implantação e ao ajuste fino com um clique de mais de 150 modelos populares de código aberto, como modelos de processamento de linguagem natural, detecção de objetos e classificação de imagens.
+
+Amazon Bredrock
+
+O Amazon Bedrock é um serviço totalmente gerenciado que disponibiliza FMs da Amazon e das principais startups de IA por meio de uma API. Com a experiência sem servidor do Amazon Bedrock, você pode começar rapidamente, experimentar FMs, personalizá-los de forma privada com seus próprios dados e integrar e implantar facilmente FMs em suas aplicações da AWS.
+
+Amazon Q
+A AWS fornece uma infraestrutura segura e compatível para criar aplicações de IA. A AWS usa recursos de segurança robustos, atributos de conformidade específicos do setor e um modelo de responsabilidade compartilhada. Ela também fornece serviços e ferramentas que podem apoiar o desenvolvimento e a implantação responsáveis e seguros de soluções de IA tradicionais e generativas.
+
+O Amazon Q pode ajudar você a obter respostas rápidas e relevantes para perguntas urgentes, resolver problemas, gerar conteúdo e tomar medidas usando os dados e a experiência encontrados nos repositórios de informações, códigos e sistemas corporativos da sua empresa. Quando você conversa com o Amazon Q, ele fornece informações e conselhos imediatos e relevantes para ajudar a simplificar tarefas, acelerar a tomada de decisões e ajudar a estimular a criatividade e a inovação.
+
+Amazon Q Developer
+
+Projetado para melhorar a produtividade do desenvolvedor, o Amazon Q Developer fornece recomendações de código baseadas em ML para acelerar o desenvolvimento de aplicações em C#, Java, JavaScript, Python e TypeScript. O serviço se integra a vários ambientes de desenvolvimento integrado (IDEs) e ajuda os desenvolvedores a escreverem código mais rapidamente, gerando funções inteiras e blocos lógicos de código, geralmente consistindo em mais de 10 a 15 linhas de código.
+
+Vantagens e benefícios das soluções de IA da AWS
+
+De pequenas startups a grandes empresas, as organizações confiam na AWS para inovar com poderosas ferramentas de IA. A AWS oferece recursos de segurança e privacidade de alto nível para manter seus dados seguros e oferece acesso aos modelos de IA mais avançados disponíveis.
+
+Com a AWS, você pode criar e desenvolver suas próprias aplicações de IA personalizadas que usam IA generativa. Essas aplicações podem ser personalizadas de acordo com suas necessidades específicas. A AWS ajuda você a aproveitar a tecnologia de IA generativa e criar algo verdadeiramente único e personalizado.
+
+Para saber mais sobre as vantagens de usar os serviços da AWS para criar aplicações de IA, escolha cada um dos marcadores numerados.
+
+Consideração sobre custos
+
+Ao trabalhar com serviços de IA e ML na AWS, é essencial entender as várias considerações de custo envolvidas. As vantagens e desvantagens podem afetar fatores como capacidade de resposta, disponibilidade, redundância, desempenho, cobertura regional, modelos de preços, throughput e a capacidade de usar modelos personalizados.
+
+Capacidade de resposta e disponibilidade: 
+
+Os serviços de IA generativa da AWS são projetados para serem altamente responsivos e disponíveis. No entanto, níveis mais altos de capacidade de resposta e disponibilidade geralmente têm um custo maior. Por exemplo, serviços com menor latência e maior disponibilidade (por exemplo, implantação em várias Regiões) normalmente terão preços mais altos em comparação com alternativas com menores garantias de desempenho e disponibilidade.
+
+Redundancia e cobertura regional:
+
+Para garantir redundância e alta disponibilidade, os serviços de IA generativa da AWS podem ser implantados em várias Zonas de Disponibilidade ou até mesmo em várias Regiões AWS. Essa redundância tem um custo adicional, pois os recursos precisam ser provisionados e os dados replicados em vários locais.
+
+Desempenho:
+
+A AWS oferece diferentes opções de computação (por exemplo, CPU, GPU e aceleradores de hardware personalizados) para serviços de IA generativa. As opções de maior desempenho, como instâncias de GPU, geralmente têm um custo mais alto, mas podem oferecer melhorias significativas no desempenho de determinadas workloads.
+
+Preços baseados em tokens:
+
+Muitos serviços de IA generativa da AWS, como o Amazon Q Developer e o Amazon Bedrock, usam um modelo de preços baseado em tokens. Isso significa que você paga pelo número de tokens (uma unidade de texto ou código) gerados ou processados pelo serviço. Quanto mais tokens você gerar ou processar, maior será o custo.
+
+Throughput provisionado:
+
+Alguns serviços de IA generativa da AWS, como o Amazon Polly e o Amazon Transcribe, permitem provisionar uma quantidade específica de throughput (por exemplo, capacidade de processamento de áudio ou texto) com antecedência. Níveis mais altos de throughput provisionados normalmente têm um custo mais alto, mas podem garantir um desempenho previsível para workloads urgentes.
+
+Modelos personalizados:
+
+A AWS fornece modelos pré-treinados para várias tarefas de IA generativa, mas você também pode trazer seus próprios modelos personalizados ou realizar o ajuste fino de modelos existentes. O treinamento e a implantação de modelos personalizados podem gerar custos adicionais, dependendo da complexidade do modelo, dos dados de treinamento e dos recursos computacionais necessários.
+
+É importante avaliar cuidadosamente seus requisitos e workload específicos ao escolher os serviços da AWS. Fatores como os listados anteriormente podem impactar significativamente o custo geral e o desempenho.
+
+Ao entender essas considerações de custo, você pode tomar decisões informadas e otimizar suas implantações de IA da AWS para equilibrar custos, desempenho e outros requisitos de forma eficaz.
+
+Teste de conhecimento
+
+Pergunta 1)
+Uma empresa tem uma grande coleção de e-mails de suporte ao cliente e transcrições de bate-papo. Eles querem analisar o sentimento expresso nessas mensagens e identificar problemas ou tópicos comuns discutidos por seus clientes.
+Qual serviço da AWS seria mais apropriado para essa tarefa? 
+
+[ ]Amazon Transcribe
+
+[ ]Amazon Kendra
+
+[ ]Amazon Polly
+
+[X]Amazon Comprehend
+
+Pergunta 2)
+Uma empresa de varejo acumulou um grande volume de dados de transações de clientes, incluindo histórico de compras, preferências de produtos e informações demográficas. A empresa quer usar esses dados para criar modelos de machine learning que possam fornecer recomendações personalizadas de produtos aos clientes e melhorar sua experiência geral de compra.
+
+Qual serviço da AWS seria mais adequado para a empresa de varejo criar, treinar e implantar modelos de machine learning para recomendações personalizadas de produtos?
+
+[X] Amazon SageMaker
+[ ] Amazon Bredrock
+[ ] Amazon Lex
+[ ] Amazon Q Developer
+
+*****      Recursos          *****
+
+Serviços da AWS
+Use os recursos na seção a seguir para expandir seu conhecimento sobre as ofertas de IA e ML da AWS.
+
+Amazon Bedrock
+Saiba como criar e escalar aplicações de IA generativa com FMs.
+
+https://aws.amazon.com/pt/bedrock/?gclid=CjwKCAjw5v2wBhBrEiwAXDDoJTqwuJcV7Vh012iqnAwO5D1thsvz8T34tacA0Y8k5Ib0ut2No9tldBoCC2IQAvD_BwE&trk=0eaabb80-ee46-4e73-94ae-368ffb759b62&sc_channel=ps&ef_id=CjwKCAjw5v2wBhBrEiwAXDDoJTqwuJcV7Vh012iqnAwO5D1thsvz8T34tacA0Y8k5Ib0ut2No9tldBoCC2IQAvD_BwE:G:s&s_kwcid=AL!4422!3!692006004688!p!!g!!bedrock!21048268554!159639952935
+
+Amazon Comprehend
+Saiba como obter e entender informações valiosas de textos em documentos.
+
+https://aws.amazon.com/pt/comprehend/
+
+Amazon Kendra
+Saiba mais sobre a pesquisa corporativa inteligente.
+
+https://aws.amazon.com/pt/kendra/
+
+Amazon Lex
+Saiba como a IA conversacional pode transformar sua empresa.
+
+https://aws.amazon.com/pt/lex/?nc2=type_a
+
+Amazon Personalize
+Saiba como melhorar a experiência do cliente com a personalização baseada em ML.
+
+https://aws.amazon.com/pt/personalize/?nc2=type_a
+
+Amazon Polly
+Aprenda a implantar vozes humanas de alta qualidade e com som natural em dezenas de idiomas.
+
+https://aws.amazon.com/pt/polly/?nc2=type_a
+
+Amazon Q
+Saiba mais sobre esse assistente desenvolvido com IA generativa, projetado para o trabalho e que pode ser adaptado à sua empresa.
+
+https://aws.amazon.com/pt/q/
+
+Amazon Q Developer
+Saiba mais sobre essa ferramenta de produtividade baseada em IA para o IDE e a linha de comando.
+
+https://aws.amazon.com/pt/q/developer/
+
+Amazon Rekognition
+Saiba como automatizar seu reconhecimento de imagem e análise de vídeo com machine learning.
+
+https://aws.amazon.com/pt/rekognition/?nc2=type_a
+
+Amazon SageMaker
+Aprenda a criar, treinar e implantar modelos de ML para qualquer caso de uso.
+
+http://aws.amazon.com/pt/sagemaker/?nc2=type_a
+
+Amazon SageMaker JumpStart
+Saiba mais sobre esse hub de ML com FMs, algoritmos integrados e soluções de ML pré-criadas.
+
+https://aws.amazon.com/pt/sagemaker-ai/jumpstart/
+
+Amazon Textract
+Saiba como extrair automaticamente texto impresso, manuscrito, elementos de layout e dados de qualquer documento.
+
+https://aws.amazon.com/pt/textract/?nc2=type_a
+
+Amazon Transcribe
+Saiba como converter automaticamente a fala em texto.
+
+https://aws.amazon.com/pt/transcribe/?nc2=type_a
+
+Amazon Translate
+Saiba mais sobre tradução automática fluente e precisa.
+
+https://aws.amazon.com/pt/translate/?nc2=type_a
+
+AWS DeepRacer
+Aprenda sobre machine learning com este carro de corrida em escala 1/18 movido por aprendizado por reforço.
+
+https://aws.amazon.com/pt/deepracer/?nc2=type_a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                  
+                                                                               
+                                                                        
+                                                                        

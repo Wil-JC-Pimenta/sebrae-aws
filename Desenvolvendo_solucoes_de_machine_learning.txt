@@ -1,0 +1,803 @@
+
+
+Desenvolvendo soluções de machine learning
+
+Description
+
+
+Neste curso de machine learning, você aprenderá sobre o ciclo de vida do 
+machine learning e como usar os serviços da AWS em todas as etapas. Além 
+disso, você descobrirá as diversas fontes de modelos de machine learning
+e aprenderá técnicas para avaliar seu desempenho. Você também entenderá a
+importância das operações de machine learning(MLOPS) na simplificação do desenvolvimento e da implantação de seus projetos de machine learning.
+
+Ciclo de vida de desenvolvimento de ML
+
+O ciclo de vida do machine learning(ML) se refere ao processo de ponta a ponta de desenvolvimento, implantação e manutenção de modelos de machine
+learning.
+
+O processo de ciclo de vida de machine learning de ponta a ponta inclui as seguintes fases:
+
+Identificação de metas de negócios
+Definição de problemas de ML
+Processamento de dados (coleta de dados, pré-processamento de dados e engenharia de atributos)
+Desenvolvimento de modelos (treinamento, ajuste e avaliação)
+Implantação do modelo(inferência e previsão)
+Monitoramento de modelos
+Retreinamento de modelo
+
+A ilustração a seguir mostra como as fases funcionam juntas.
+
+
+[Problema de negócios]
+             |
+[Definição de problemas de ML]
+             |
+        ________ [Coleta e preparação de dados]-------------------------------------------------------------------------------------[Monitoramento e depuração]
+       |              |                                                                                                                         |
+       |              |                                                                                                                         |
+       |              |                                                                                                                         |
+       |    [Engenharia de recursos] <-------- [Treinamento de modelo e ajuste de parâmetros] --------------[Avaliação do modelo]               |
+       |                                                                                              |                                         |
+       |                                                                                              |                                         |
+       |                                                                                              |                            [Testes e implantação de modelo]
+       |                                                                                                                                        | 
+       |____Aumento_de_dados_________Aumento_de_recursos___________________________Não < As metas foram cumpridas> Sim__________________________|
+
+
+Defina metas de negócios
+
+
+O ML inicia com um objetivo comercial.
+Os stakeholders da empresa definem o valor, o orçamento e os critérios de sucesso. 
+Definir os critérios de sucesso ou os principais indicadores de desempenho (KPIs)
+para a carga de trabalho de ML é fundamental.  
+
+Definição de problemas de ML
+
+
+A formulação do problema envolve articular o problema de negócios e convertê-lo em um problema de machine learning.
+
+O data scientist, engenheiros de dados e arquitetos de ML trabalharão com especialistas no assunto (SMEs) da linha de negócios para determinar se é adequado usar ML para resolver o problema comercial. 
+Nessa fase, as equipes podem trabalhar na descoberta. Elas determinarão se têm os dados, as habilidades e assim por diante adequados para fornecer a solução de negócios com sucesso.
+
+Processamento de dados
+
+Depois de formularem o problema, a próxima fase é a fase de preparação e pré-processamento dos dados.
+Para treinar um modelo de ML preciso, os desenvolvedores usam o processamento de dados para converter dados em um formato utilizável.
+As etapas de processamento de dados incluem coleta e integração de dados, pré-processamento e visualização de dados e engenharia de atributos.
+A coleta e a integração de dados garantem que os dados brutos estejam em um local centralmente acessível. O pré-processamento e a visualização de dados envolvem a transformação de dados brutos em um formato compreensível. A engenharia de atributos é o processo de criar, transformar, extrair e selecionar variáveis dos dados.
+
+Desenvolvimento de modelos
+
+O desenvolvimento do modelo consiste em treinamento, ajuste e avaliação do modelo. 
+É um processo iterativo que pode ser executado várias vezes ao longo desse fluxo de trabalho.
+Inicialmente, após o treinamento, o modelo não produzirá os resultados esperados. Portanto, os desenvolvedores farão engenharia de atributos adicionais e ajustarão os hiperparâmetros do modelo antes de treinar novamente.
+
+Retreinar
+
+Se o modelo não atender às metas de negócios, é necessário analisar novamente os dados e os atributos para identificar formas de aprimorar o modelo. A construção de um modelo geralmente é um processo iterativo. Isso também pode envolver o ajuste dos hiperparâmetros de treinamento.
+
+Implantação
+
+Se os resultados forem satisfatórios, o modelo será implantado na produção. O modelo agora está pronto para fazer previsões e inferências em relação ao modelo.
+
+Monitoramento
+
+O sistema de monitoramento do modelo garante que o mesmo mantenha o nível desejado de desempenho por meio de detecção e mitigação precoces. O monitoramento também ajuda a depurar problemas e entender o comportamento do modelo.
+
+Iterações
+
+O ciclo de vida do aprendizado de máquina é um processo iterativo. O modelo é continuamente aprimorado e refinado à medida que novos dados são disponibilizados ou conforme os requisitos mudam. Essa natureza iterativa ajuda a garantir que o modelo permaneça preciso e relevante ao longo do tempo.
+À medida que uma empresa segue essas etapas, é necessário ter uma colaboração perfeita entre as diversas funções, como gerentes de produto, desenvolvedores, cientistas de dados e engenheiros. Você aprenderá mais sobre esse conceito na seção MLOps.
+
+Caso de uso: Call center da Amazon
+
+Há alguns anos, a Amazon precisava melhorar a forma como encaminhava chamadas de atendimento ao cliente, então buscou ajuda no machine learning. 
+
+Metas de negócios
+
+O sistema original de roteamento de call center da Amazon funcionava mais ou menos assim. Um cliente ligava e era recebido por um menu: “Pressione 1 para devoluções. Pressione 2 para Kindle. Pressione 3 para…” e assim por diante. O cliente então faria uma seleção e seria enviado a um atendente que seria treinado nas habilidades específicas para ajudar o cliente.
+Na fase de formulação de problema do pipeline, a Amazon determinou que o sistema de roteamento vigente era problemático. A Amazon vende muitos tipos de produtos, então a lista de coisas sobre as quais um cliente pode estar ligando é quase infinita. Portanto, se não oferecêssemos a opção certa para um cliente, ele poderia ser enviado a um generalista ou ao especialista errado, que teria que descobrir o que o cliente precisava antes de enviá-lo para o atendente com as habilidades certas.
+Para algumas empresas, talvez isso não seja um problema. Para a Amazon, lidar com centenas de milhões de chamadas de clientes por ano era bastante ineficiente. Era muito caro, desperdiçava muito tempo e, pior de tudo, não era uma boa forma de oferecer aos clientes a ajuda necessária.
+
+
+
+. Departamento errado ---> . Nível0: Não é técnico suficiente ---------> . Departamento correto
+
+Formulação do problema
+
+O problema comercial estava focado em descobrir como encaminhar os clientes aos atendentes com as habilidades certas e, portanto, reduzir as transferências de chamadas.
+Para resolver esse problema, precisávamos prever qual habilidade resolveria a chamada de um cliente.
+Quando convertido em um problema de machine learning, isso se converteu em identificar padrões nos dados do cliente que poderíamos usar para prever o roteamento preciso do cliente. Com base na formulação deste problema de ML, ficou claro que estávamos lidando com um problema de classificação multiclasse.
+
+Coleta e integração dos dados
+
+Como queríamos basear nossas previsões em dados anteriores de chamadas de atendimento ao cliente, estávamos lidando com o aprendizado supervisionado. Eventualmente, treinaríamos nosso modelo com base em dados históricos de clientes que incluíam os rótulos corretos ou as habilidades dos atendentes dos clientes. Então, o modelo poderia fazer suas próprias previsões com base em dados semelhantes no futuro. Por exemplo, prever que uma ligação de um cliente precisava de uma habilidade do Kindle.
+Os dados de que precisávamos vieram de respostas a perguntas como: “Quais foram os pedidos recentes do cliente?” “O cliente tinha um Kindle?” “Eles são membros Prime?” As respostas a essas perguntas viraram nossos atributos.
+
+Pré Processamento e visualização dos dados
+
+Depois, passamos para a fase de preparação ou pré-processamento de dados. Essa fase inclui limpeza e análise exploratória de dados.
+Muito foi feito nesse momento, mas um exemplo de análise de dados foi pensar criticamente sobre os rótulos que estávamos usando. Fizemos algumas perguntas a nós mesmos: “Há algum rótulo que queremos excluir do modelo por algum motivo comercial?” “Existem rótulos que não são totalmente precisos?” “Algum rótulo é semelhante o suficiente para ser combinado?” Encontrar respostas para essas perguntas explorando os dados ajudaria a reduzir o número de atributos usados e simplificaria nosso modelo.
+
+Um exemplo do que descobrimos nesse tipo de análise foi combinar rótulos que representavam várias habilidades do Kindle em um rótulo abrangente de habilidades do Kindle. Dessa forma, cada cliente que teve um problema com um Kindle foi encaminhado para um atendente treinado em todos os problemas do Kindle.
+
+A visualização de dados foi a próxima etapa, na qual fizemos várias coisas, incluindo uma análise programática, para nos dar uma ideia rápida dos resumos de atributos e rótulos. Isso nos ajudou a entender melhor os dados com os quais estávamos trabalhando. Por exemplo, poderíamos ter descoberto que 40% das chamadas estavam relacionadas a devoluções, 30% estavam relacionadas a assinaturas Prime, 30% estavam relacionadas ao Kindle e assim por diante.
+
+Treinamento do modelo
+
+Uma grande parte da preparação para o processo de treinamento é primeiro dividir seus dados para garantir uma divisão adequada entre seus esforços de treinamento e avaliação.
+O objetivo fundamental do ML é generalizar além das instâncias de dados usadas para treinar modelos. Convém avaliar seu modelo para estimar a qualidade de suas previsões para os dados nos quais o modelo não foi treinado. No entanto, da mesma maneira que o aprendizado supervisionado, como instâncias futuras têm valores de destino desconhecidos e não é possível verificar a acurácia das previsões para elas, é preciso usar alguns dados conhecidos para prever dados futuros.
+Avaliar o modelo com os mesmos dados usados no treinamento não é bom, porque recompensa modelos que conseguem “memorizar” dados de treinamento, em vez de generalizar a partir deles.
+Uma estratégia comum é dividir todos os dados rotulados disponíveis em subconjuntos de treinamento, validação e teste, geralmente com uma proporção de 80%, 10% e 10%. (Outra proporção comum é 70%, 15% e 15%.)
+
+Avaliação do modelo
+
+Depois de ficarmos satisfeitos com a forma como o modelo interagia com dados de teste invisíveis, implantamos o modelo na produção e o monitoramos para garantir que nosso problema comercial estivesse realmente sendo resolvido.
+Nosso problema foi baseado na suposição de que a capacidade de prever habilidades com mais precisão reduziria o número de transferências que um cliente experimentou. Isso foi testado após a implantação, e o número de transferências diminuiu, o que resultou em uma experiência muito melhor para o cliente.
+
+Ajuste de modelo e engenharia de atributos
+
+Depois de executar uma tarefa de treinamento, avaliamos o modelo e iniciamos os ajustes iterativos do modelo e dos dados.
+Por exemplo, fizemos a otimização de hiperparâmetros. Ajustamos os parâmetros de aprendizado para controlar se o modelo aprende rápido ou devagar.
+Aprender muito rápido significa que o algoritmo nunca alcançará um valor ideal. Aprender muito devagar significa que o algoritmo demora muito e pode nunca convergir para o ideal em um determinado número de etapas.
+Depois, passamos para engenharia de atributos. Tivemos atributos que respondiam a perguntas como: “Qual foi o pedido mais recente de um cliente?” “Qual foi a hora do pedido mais recente de um cliente?” “O cliente tem um Kindle?” Quando fornecemos esses atributos ao algoritmo de treinamento do modelo, ele aprende apenas exatamente o que mostramos.
+
+Implantação do modelo
+
+Em seguida, implantamos o modelo. Agora, ele ajuda os clientes a serem direcionados ao atendente correto na primeira vez.
+
+. Cliente -------------> . Atendente correto
+
+// Desenvolvimento de soluções de ML com o Amazon SageMaker 
+
+Amazon SageMaker é um serviço de ML totalmente gerenciado. Em uma interface visual unificada, você pode executar as seguintes tarefas:
+
+Coletar e preparar dados.
+
+Criar e treinar modelos de machine learning.
+
+Implantar os modelos e monitorar o desempenho das previsões deles.
+
+Os diagramas a seguir apresentam os vários atributos do SageMaker que você pode usar no ciclo de vida do machine learning.
+
+Você pode usar o Amazon SageMaker para realizar todas as etapas, da coleta de dados à implantação do modelo, em um fluxo de trabalho de ML.
+
+Coletar, analisar e preparar seus dados
+
+O Amazon SageMaker Data Wrangler é uma ferramenta de baixo código e sem código (LCNC). Ele fornece uma solução completa para importar, preparar, transformar, caracterizar e analisar dados usando uma interface web. Os clientes podem adicionar seus próprios scripts e transformações em Python para personalizar fluxos de trabalho. 
+
+Para usuários mais avançados e preparação de dados em grande escala, o Amazon SageMaker Studio Classic vem com integração das sessões interativas do Amazon EMR e do AWS Glue para lidar com fluxos de trabalho interativos de preparação de dados e machine learning em grande escala em seu caderno SageMaker Studio Classic.
+
+Finalmente, usando a API de processamento do SageMaker, os clientes podem executar scripts e cadernos para processar, transformar e analisar conjuntos de dados. Eles também podem usar várias estruturas de ML, como scikit-learn, MXNet ou PyTorch, enquanto se beneficiam de ambientes de machine learning totalmente gerenciados.
+
+No final dessa etapa, os clientes geralmente acabam com atributos para definir o modelo e os dados nos quais esse modelo será treinado.
+
+Gerenciamento de atributos
+
+O Amazon SageMaker Feature Store ajuda cientistas de dados, engenheiros de machine learning e clínicos gerais a criar, compartilhar e gerenciar atributos para o desenvolvimento de ML.
+
+Os atributos armazenados na loja podem ser recuperados e enriquecidos antes de serem fornecidos aos modelos de ML para inferências.
+
+Dados brutos ---> Processamento de recursos ----> Loja de recursos do AmazonSagemaker ----> Streaming/Lote: Ingerir dados ----- Loja de recursos online/Loja de recursos offline: reporisório ---- Inferência em tempo real ---- Inferência em lote ---- Treinamento de modelo [serve]
+
+O Amazon SageMaker Feature Store ajuda cientistas de dados, engenheiros de machine learning e clínicos gerais a criar, compartilhar e gerenciar atributos para o desenvolvimento de ML.
+
+Os atributos armazenados na loja podem ser recuperados e enriquecidos antes de serem fornecidos aos modelos de ML para inferências.
+
+Treinamento e avaliação de modelos
+O SageMaker fornece um atributo de trabalho de treinamento para treinar e implantar modelos usando algoritmos integrados ou algoritmos personalizados.
+
+O SageMaker inicia as instâncias de computação de ML e usa o código de treinamento e o conjunto de dados de treinamento para treinar o modelo. Ele salva os artefatos do modelo resultantes em um bucket do Amazon Simple Storage Service (Amazon S3) que pode ser usado posteriormente para inferência.
+
+Clientes que desejam uma opção de LCNC podem usar o Amazon SageMaker Canvas. Com o SageMaker Canvas, eles podem usar o machine learning para gerar previsões sem precisar escrever nenhum código.
+
+O Amazon SageMaker JumpStart fornece modelos pré-treinados e de código aberto que os clientes podem usar para uma ampla variedade de tipos de problemas.
+
+Avaliação do modelo
+
+Os clientes podem usar os experimentos do Amazon SageMaker para experimentar várias combinações de dados, algoritmos e parâmetros, ao mesmo tempo em que observam o impacto das mudanças incrementais na acurácia do modelo.
+
+O ajuste de hiperparâmetros é uma forma de encontrar a melhor versão de seus modelos. O Amazon SageMaker Automatic Model Tuning faz isso executando vários trabalhos com diferentes hiperparâmetros em combinação e medindo cada um deles por meio de uma métrica que você escolher.
+
+Com o SageMaker, os clientes podem implantar seus modelos de ML para fazer previsões, também conhecidas como inferência. O SageMaker fornece uma ampla seleção de infraestrutura de ML e opções de implantação de modelos para atender a todas as suas necessidades de inferência de ML.
+
+Monitoramento
+Com o Amazon SageMaker Model Monitor, os clientes podem observar a qualidade dos modelos de ML do SageMaker em produção. Eles podem configurar o monitoramento contínuo ou o monitoramento dentro do cronograma. O SageMaker Model Monitor ajuda a manter a qualidade do modelo detectando violações dos limites definidos pelo usuário para qualidade de dados, qualidade do modelo, desvio de viés e desvio de atribuição de atributos.
+
+Ambientes SageMaker
+
+O Amazon SageMaker Studio é a opção recomendada para acessar o SageMaker. É uma interface de usuário baseada na web que fornece acesso a todos os ambientes e atributos do SageMaker.
+
+[1] SageMaker Studio
+
+
+Essa interface baseada na web dá acesso a todas as ações que você pode usar para desenvolver aplicativos de ML, como preparar dados, treinar, implantar e monitorar modelos.
+
+[2] Aplicações
+
+
+O SageMaker Studio oferece várias aplicações, incluindo as seguintes:
+
+JupyterLab: Uma ferramenta para desenvolver cadernos, códigos e dados Jupyter 
+Amazon SageMaker Canvas: uma ferramenta de machine learning sem código para gerar previsões sem precisar escrever nenhum código
+RStudio: um ambiente de desenvolvimento integrado para a linguagem R
+Editor de código (baseado no Visual Studio Code): outra opção para desenvolver código e cadernos enquanto obtém acesso a milhares de extensões compatíveis com o VS Code
+
+ML automatizado
+
+
+O SageMaker JumpStart fornece modelos de código aberto pré-treinados para uma variedade de tipos de problemas para ajudar você a começar a usar o machine learning.
+O AutoML está disponível no SageMaker Canvas. Ele simplifica o desenvolvimento de ML ao automatizar o processo de criação e implantação de modelos de machine learning.
+As avaliações de modelos analisam grandes modelos de linguagem (LLMs) ou inteligência artificial generativa (IA generativa) para verificar a qualidade e a responsabilidade do modelo.
+
+Fontes de Modelo de ML
+
+O SageMaker oferece suporte a modelos pré-treinados, algoritmos integrados e imagens personalizadas do Docker. 
+
+Veja a seguir maneiras de usar o SageMaker para criar seu modelo de ML:
+
+Os modelos pré-treinados exigem o mínimo esforço e estão prontos para implantação ou para serem ajustados e implantados usando o SageMaker JumpStart.
+Os modelos integrados disponíveis no SageMaker exigem mais esforço e escala se o conjunto de dados for grande e forem necessários atributos significativos para treinar e implantar o modelo.
+Se não houver uma solução integrada que funcione, tente desenvolver uma que use imagens pré-fabricadas para machine learning e frameworks de aprendizado profundo para frameworks compatíveis,
+como scikit-learn, TensorFlow, PyTorch, MXNet ou Chainer.
+Você pode criar sua própria imagem personalizada do Docker, configurada para instalar os pacotes ou o software necessários.
+
+Algoritmos integrados do SageMaker
+
+Existem diferentes tipos de algoritmos de machine learning com base no seu caso de uso, nos requisitos e nos dados que você tem.
+Para saber mais sobre os algoritmos compatíveis com o SageMaker, escolha os botões INICIAR ou de seta para exibir cada um dos quatro tipos.
+
+Análise de Texto
+                   
+                       [Texto]                                                                                                       [Fala]
+                        |                                                                                                              |
+        -----------------------------------------------------------------------------------------------------------                    | 
+        |                                     |                       |                                            |                   |
+  [Classificação de tetos]            ___ [Wordvec2]       [Tradução de máquina]                        [Modelagem de tópicos]   [Sequence to sequence]
+            |                        |                                                                             |
+     [BlazingText] ------------------|                     [Sequence to sequence]                                  |____>   [Latent Dirichlet Allocation (LDA-Alocação de Dirichlet latente)]
+                                                                                                                   |____>   [Modelagem de tópicos neurais (NTM)]
+
+
+O SageMaker fornece algotitmos personalizados para a análise de documentos textuais usados no processamento de linguagem natural ou resumo de documentos, modelagem ou classificação de
+tópicos e transcrição de idiomas.
+
+Avaliação de desempenho de modelos treinados
+
+Avaliação do modelo
+
+Nessa seção, você aprenderá sobre avaliação de modelos. Você verá quais métricas podem ser usadas para dois algoritmos de ML muito comuns: classificação e regressão.
+
+Conjuntos de dados de avaliação de modelos
+
+A avaliação ocorre depois que um modelo é treinado. Os dados que você usa são patrocinados em três partes: O conjunto de treinamento é usado para treinar o modelo. Os conjuntos de 
+validação e teste são aqueles que você usará para avaliar o desempenho do modelo treinado.
+
+Conjunto de validação
+
+Para começar a avaliar como o modelo responde em um ambiente sem treinamento, comece examinando os dados que foram separados como conjunto de validação. Você quer ter certeza
+de que o modelo se generaliza para dados que ele não viu. O modelo ainda precisa ser aprimorado antes de determinar se está pronto para produção.
+
+CONJUNTO DE TREINAMENTO / 80%
+
+CONJUNTO DE VALIDAÇÃO/10%     ---- Use estes dados para melhorar o modelo
+
+CONJUNTO DE TESTES/10%
+
+Conjunto de teste
+
+Depois de aprimorar o modelo usando esses dados de validação, você poderá testá-lo pela última vez para garantir que a qualidade preditiva atenda aos seus critérios.
+
+CONJUNTO DE TREINAMENTO/80%
+
+CONJUNTO DE VALIDAÇÃO/10%
+
+CONJUNTO DE TESTE/10$      --- Use estes dados para avaliar a qualidade preditiva do modelo treinado
+
+Ajuste do modelo
+
+O ajuste do modelo é importante para entender a causa-raiz da baixa acurácia do modelo. Essa compreensão orientará você a tomar medidas corretivas.
+Você pode determinar se um modelo preditivo está subajustando ou superajustando os dados de treinamento observando o erro de predição nos dados de
+treinamento observando o erro de predição nos dados de treinamento e nos dados de avaliação.
+
+Sobreajuste
+
+O sobreajuste ocorre quando o modelo tem um bom desempenho nos dados de treinamento, mas não tem um bom desempenho nos dados da avaliação. Isso ocorre porque o modelo memorizou os
+dados que viu e não consegue generalizar para exemplos não vistos.
+
+Viés e variância
+
+Ao avaliar modelos, tanto o viés quanto a variância contribuem para os erros que o modelo comete em dados não vistos, o que afeta a sua generalização.
+
+----------------------------------------------------------------------------------
+
+      BAIXA VARIÂNCIA                  ALTA VARIÂNCIA
+
+B
+A
+I           .(..)                             ..()..
+X
+O
+
+V
+I
+É
+S
+
+
+
+
+V
+I
+É
+S
+                                            .. .
+              ...
+A             ( ).                           ( )   .
+L
+T
+O
+
+-------------------------------------------------------------------------------
+
+Um alvo é uma boa analogia porque, de um modo geral, o centro do alvo é para onde você aponta seus dardos.
+O centro do alvo nessa situação é o rótulo ou o destino (ele prediz o valor do seu modelo) e cada ponto é um resultado que seu modelo produziu
+durante o treinamento.
+
+Pense no viés como a lacuna entre o valor previsto e o valor real, enquanto a variância descreve a dispersão dos valores previstos.
+
+Em ML, o algoritmo ideal tem baixo viés e pode modelar com precisão o verdadeiro relacionamento.
+O algoritmo ideal também tem baixa variabilidade, produzindo previsões consistentes em diferentes conjuntos de dados.
+
+Pensa no viés como a lacuna entre o valor previsto e o valor real, enquanto a variância descreve a dispersão dos valores previstos.
+Em ML, o algoritmo ideal tem viés baixo e pode modelar com precisão a verdadeira relação, e tem baixa variabilidade, produzindo consistentes em
+diferentes conjuntos de dados.
+
+Alta variância     Viés Alto     Baixa Polarização; baixa variância
+
+
+
+
+ Sobreajuste       Subajuste             Balanceado
+
+Problemas de classificação e regressão
+
+A forma como você avalia um modelo de machine learning depende do tipo de problema de ML com o qual você está trabalhando.
+Nesta seção, você examinará as métricas de classificação e regressão.
+
+Para aprender as métricas, escolha cada uma das opções:
+
+Métricas de classificação
+
+. Acurácia
+. Exatidão
+. Recall
+. F1
+. AUC-ROC
+
+Métricas de regressão
+
+. Erro quadrático médio
+. R-quadrado
+
+
+Métricas do problema de classificação
+
+Exemplo de classificação
+
+A seguir está um problema de classificação binária em que um modelo de reconhecimento de imagem rotula os dados como "gato" ou "não gato"
+
+------[Valores verdadeiros]               [Previsõe]
+[Gato]                                       [Gato]
+[Não gato!]                                  [Gato]
+[Gato]                                       [Não gato!]
+[Gato]                                       [Gato]
+[Não gato!]                                  [Não gato!]
+[Gato]                                       [Não gato!]
+
+
+
+Para avaliar um problema de classificação como mostrado, use as seguintes etapas:
+
+Etapa 1: Envie as observações retidas onde você conhece os valores de destino para o modelo.
+Etapa 2 : Compare as previsões retornadas pelo modelo com o valor de destino conhecido.
+Etapa final: Calcule uma métrica resumida que mostre quão bem os valores previstos e reais coincidem.
+
+Matriz de confusão
+
+Uma matriz de confusão pode ajudar a classificar por que e como um modelo erra. É o alicerce para executar esses tipos de avaliações de modelos para
+problemas de classificação. Analise o gráfico a seguir, que é uma matriz de confusão para o exemplo de reconhecimento de imagem. A matriz fornece uma comparação 
+de alto nível de como as classes previstas se compararam às classes reais
+
+Depois que o modelo for aplicado aos dados de teste, cada uma das quatro caixas na matriz incluirá um número agregado das ocorrências eclusivas de verdadeiros positivos,
+falsos positivos,falsos negativos e verdadeiros negativos
+
+                                            CLASSE PREVISTA
+                          p                                    N
+              p Verdadeiro positivo (VP)                 Falso negativo(FN)
+
+    CLASSE
+     REAL     N Falso positivo (FP)                      Verdadeiro negativo(VN)
+
+
+1. Verdadeiro positivo(VP)
+Se o rótulo ou classe real for "gato", identificado como "P" para positivo na matriz de confusão, e o rótulo ou classe previsto também for "gato", você terá o resultado
+positivo verdadeiro. Esse é um bom resultado para seu modelo.
+
+2. Verdadeiro negativo(VN)
+Da mesma forma, se você tem um rótulo real de "não gato", identificado como "N" para negativo na matriz de confusão, e o rótulo ou classe prevista também é "não gato", então
+você tem um verdadeiro negativo. Esse também é um bom resultado para o modelo. Em ambos os casos, seu modelo previu o resultado correto ao usar os dados de teste.
+
+3. Falso Positivo(FP)
+
+Isso é menos do que o ideal e ocorre quando a classe real é negativa, então "não gato", mas a classe prevista é positiva, então "gato". Isso é chamado de falso positivo porque a
+previsão é positiva, mas incorreta.
+
+4. Isso também não é o ideal. Um falso negativo ocorre quando a classe real é positiva, portanto "gato", mas a classe prevista é negativa, portanto "não gato".
+
+
+
+
+
+
+Acurácia
+
+              TP + TN
+_________________________________________
+         
+       (TP + TN + FP + F N )
+   Cálculo de acurácia de um modelo
+
+Para calcular a acurácia do modelo, também conhecida como pontuação, some as previsões corretas e divida esse número pelo número total de previsões.
+
+-> Embora a acurácia seja uma métrica amplamente utilizada para problemas de classificação, ela apresenta limitações. Essa métrica é menos eficaz quando
+seu conjunto de dados tem muitos casos de verdadeiros negativos. É poi isso que duas outras métricas são frequentemente usadas nessas situações: precisão e recall.
+
+Exatidão
+
+A precisão remove as previsões negativas da imagem. Precisão é a proporção de previsões positivas que estão realmente corretas.
+Você pode calculá-la pegando a contagem positiva verdadeira e dividindo-a pelo número total de positivos.
+
+             TP
+_____________________________
+
+        TP + FP
+    Cálculo para precisão
+
+Quando o custo dos falsos positivos é alto em suasituação comercial específica, a precisçao pode ser uma boa métrica. Pense em um modelo de classificação
+que identifica e-mails como spam ou não. Nesse caso, você não quer que seu modelo rotule um e-mail legítimo como spam e impeça que seus usuários vejam esse e-mail.
+
+Recall
+
+Além da precisão, também há recall(ou sensibilidade). No Recall você está observando a proporção de conjuntos corretos que são identificados como positivos. O recall
+é calculado dividindo a contagem de verdadeiros positivos pela soma dos verdadeiros positivos e falsos negativos. Ao examinar a proporção, temos uma ideia da qualidade do
+algotitmo de detecção de gatos, por exemplo.
+
+
+
+       TP
+___________________
+  
+    TP + FN
+
+Cálculo para recall
+
+Pense em um modelo que precisa prever se um paciente tem uma doença terminal ou não. Nesse caso, o uso da precisão como sua métrica de avaliação não considera
+os falsos negativos no seu modelo. É extremamente importante e vital para o sucesso do modelo que ele não forneça resultados falsos negativos. Um falso negativo
+seria não identificar um paciente como portador de uma doença terminal quando o paciente realmente tem uma doença terminal. Nexxa situação, o recall é uma métrica
+melhor de usar.
+
+
+
+AUC-ROC
+
+A Area Under the Curve-Receiver Operator Curve(AUC-ROC - Área sob a curva - curva do operador do receptor é outra métrica de avaliação. ROC é uma curva de probabilidade
+e AUC representa o grau ou medida de separabilidade.
+
+Em geral, o AUC-ROC pode mostrar qual é a aparência da curva do verdadeiro positivo em comparação com o falso positivo em vários limites.
+Isso significa que ao calcular a curva AUC-ROC, você plota várias matrizes de confusão em diferentes limites e faz uma comparação entre elas para
+descobrir o limite necessário para o caso de uso comercial.
+
+A AUC usa a sensibilidade (taxa positiva verdadeira) e a especificidade (taxa positiva falsa)
+
+1                              .
+         ROC         .
+0.8          .
+
+0.6     .
+
+0.4   .
+
+0.2 .
+
+0 .      0.2   0.4   0.6  0.8  1
+
+_________________________________
+
+
+Exemplo: classificação de spam por e-mail
+Veja um exemplo de classificação de spam por e-mail. Os e-mails são ordenados pela pontuação de risco do classificador. 
+No gráfico a seguir, os e-mails com alta pontuação estão à esquerda e a grande maioria dos e-mails com baixa pontuação está à direita.
+
+            Eixo Y  |     . . . .  ---------- Modelo 1
+Com que frequência  |   .   . .    ---------- Modelo 2
+seu modelo          |  .  .  .     ---------- Modelo 3
+classificou spam    | . .  .
+real como spam      | . .
+(sensibilidade      |___________
+                     
+                    Com que frequência seu modelo classificou o não spam como spam(1 especificação)
+
+modelo 1 = AUC: 0,893
+modelo 2 = AUC: 0,687
+modelo 3 = AUC: 0,5
+
+Curva de compensação perfeita
+
+Á medida que você melhora os atributos que usa como entradas para classificar ou conforme você melhora o algoritmo, a curva se desloca para cima
+e para a esquerda. A curva de compensação perfeita é aquela que percorre o canto superior esquerdo do retângulo.
+
+Situação ruim
+
+Quando a AUC é de aproximadamente 0,5, seu modelo é equivalente a fazer suposições aleatórias.
+
+Ponto de troca
+
+O joelho na curva é um ótimo ponto de troca.
+Neste ponta, há um bom equilíbrio entre a população boa que você impacta e a má que você captura. Obviamente, se houver custos
+diferentes em marginalizar uma população e capturar o que é ruim, você pode mudar esse ponto operacional para a esquerda ou para
+a direita. Bons classificadores produzem bos curvas de compensação.
+
+No caso de um modelo de regressão, há outras métricas comuns que você pode usar para avaliar seu modelo, incluindo erro quadrático médio e R quadrado.
+O erro quadrático médio e R quadrado. O erro quadrático médio é muito comumente usado.
+
+Erro quadrático médio
+
+O objetivo geral do erro quadrático médio (MSE) é o mesmo das métricas de classificação. Você determina a previsão a partir do modelo e compara a diferença entre a previsão 
+resultado real.
+
+
+
+
+|         er_n 
+|          .
+|        .
+| er_1 .
+|    .
+|  .
+|.
+|______________________
+
+
+Mais especificamente, você pega a diferença entre a previsão e o valor real, seleva ao quadrado essa diferença e, em seguida, soma todas as diferenças
+quadráticas de todas as observações.
+
+Quanto menor o MSE, melhor a acurácia preditiva do modelo.
+
+----Previsões
+----Errors
+o---Valores Reais
+
+
+R-Quadrado
+
+O R-quadrado é outra métrica comumente usada com problemas de regressão linear. O R-quadrado explica a fração de variância considerada pelo modelo.
+É como uma porcentagem, relatando um número de 0 a 1. Quando R ao quadradp está próximo de 1, geralmente indica que grande parte da variação nos dados
+pode ser explicada pelo próprio modelo.
+
+O MSE se concentra no erro quadrático médio das previsões do modelo para fornecer uma medida do desempenho do modelo. R quadrado fornece uma medida da qualidade do ajuste do modelo
+aos dados. Ambos importantes, mas oferecem perspectivas diferentes.
+
+Métricas de Negócios
+
+Na seção anterior, você viu como avaliar o desempenho de um modelo de ML. Mas lembre-se de que, ao iniciar um projeto, as metas estabelecidas pela empresa e os KPIs são as métricas
+mais usadas para avaliar se as metas foram atingidas.
+
+Para validar e monitorar o desempenho do modelo, estabeleça métricas numéricas diretamente relacionados aos KPIs. Esses KPIs são estabelecidos na fase de identificação das metas de negócios.
+Eles podem incluir metas como aumentas as vendas, cortar custos ou diminuir a rotatividade de clientes
+
+Avalie se as métricas de desempenho refletem com precisão a tolerância do negócio ao erro. Por exemplo, falsos positivos podem levar a custos excessivos de manutenção em casos de uso de
+manutenção preditiva. Outro exemplo é decidir se adquirir um novo cliente é mais abrangente do que reter um. Uma empresa deve se concentrar em métricas numéricas, como precisão e recall,
+para ajudar a oferecer os requisitos do negócio e estar mais alinhada ao valor comercial.
+
+Considere desenvolver métricas personalizadas que ajustem o modelo diretamente aos objetivos de negócios. Uma forma é desenvolver uma função de custo para avaliar o impacto econômico do
+modelo. Para a função de custo, você pode especificar o custo, ou valor, das previsões corretas e o custo dos erros.
+
+Usando testes A/B ou a técnica de implantações canárias, os desenvolvedores podem experimentar duas ou mais variantes de um modelo e ajudar a atingir as metas de negócios.
+
+
+Implantação do modelo
+
+Tipos de implantação do modelo
+
+A implantação do modelo é a integração do modelo e de seus atributos em um ambiente de produção para que ele possa ser usado para criar previsões.
+
+Para conhecer as opções de implantação, escolha cada um dos seguintes flashcards.
+
+API auto-hospedada
+
+Em uma abordagem de API auto-hospedada, você impalanta e hospeda seus modelos de ML em sua própria infraestrutura, seja no local ou na nuvem(usando máquinas virtuais ou contêineres). 
+Essa abordagem envolve a configuração e o gerênciamento de infraestrutura necessária, como servidores web, balanceadores de carga e bancos de dados, para servir seus modelos de ML
+como APIs.
+
+API Gerenciada
+
+Os serviços gerenciados de API são serviços baseados em nuvem que fornecem um ambiente totalmente gerenciado para implantar e hospedas seus modelos de ML como APIs.
+O SageMaker é um exemplo.
+Esses serviços abstraem o gerenciamento da infraestrutura subjacente para que você possa se concentrar na criação e na implantação de seus modelos.
+
+As vantagens das APIs auto-hospedadas incluem maior controle sobre a infra estrutura, possíveis economias de custos (dependendo do uso) e a capacidade de personalizar o ambiente
+de implantação. No entanto, essa abordagem exige mais sobrecarga operacional e responsabilidade pelo gerenciamento e manutenção da infraestrutura.
+
+A escolha entre um serviço de API gerenciado ou uma API auto-hospedada para implantação de ML depende de fatores como os atributos específicos do seu caso de uso, nível de controle
+e personalização necessários, os atributos e a experiência disponíveis e as considerações de custo.
+
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+SageMaker
+
+O SageMaker é um serviço de ML totalmente gerenciado. Com o SageMaker, cientistas de dados e desenvolvedores podem criar, treinar e implantar modelos de ML com rapidez e confiança
+em um ambiente hospedado pronto para produção. Em algumas etapas, você pode implantar um modelo em um ambiente seguro e dimensionável.
+
+O SageMaker fornece o seguinte:
+. Implantação com um clique ou uma única chamada de API
+
+. Auto scaling
+
+. Serviços de hospedagem de modelos
+
+. Endpoints HTTPS que podem hospedar vários modelos
+
+Você pode usar o SageMaker para implantar um modelo para obter previsões de várias maneiras.
+
+Em tempo real
+A inferência em tempo real é ideal para cargas de trabalho de inferência nas quais você tem requisitos em tempo real, interativos e de baixa latência.
+
+Transformação em lote
+Use a transformação em lote quando precisa obter inferências de grandes conjuntos de dados e não precisar de um endpoint persistente.
+Você também pode usá-lo quando precisar pré-processar conjuntos de dados para remover ruídos ou preconceitos que interfiram no treinamento ou na
+interferência do seu conjunto de dados.
+
+Assíncrona
+
+A inferência assíncrona do SageMaker é um atributo do SageMaker que enfileira as solicitações recebidas e as processa de forma assíncrona.
+Essa opção é ideal para solicitações com grandes tamanhos de payloads(até 1 GB), longos tempos de processamento (atpe uma hora) e requisitos de latência
+quase em tempo real.
+
+Tecnologia sem servidor
+
+O Serverless Inference sob demanda é ideal para workloads que apresentam períodos de ociosidade entre os picos de tráfego e que podem tolerar inicializações a frio.
+É uma opção de inferência específica que você pode usar para implantar e escalar modelos de ML sem configurar ou gerenciar nenhuma infraestrutura subjacente.
+
+
+Conceitos fundamentais de MLOPS
+
+MLOps
+
+O MLOps combina pessoas, tecnologia e processos para oferecer soluções colaborativas de ML.
+
+O MLOps se refere à prática de operacionalizar e simplificar o ciclo de vida de machine learning de ponta a ponta, desde o desenvolvimento e implantação do modelo até o monitoramento e
+a manutenção. Isso ajuda a garantir que os modelos não sejam apenas desenvolvidos, mas também implantados, monitorados e retreinados de forma sistemática e repetida.
+
+O MLOps vai do treinamento do modelo ao monitoramento do modelo
+
+É uma extensão dos princípios e práticas DevOps para o domínio específico dos sistemas de machine learning.
+
+
+MLOps é como                                                  Pessoas               . Conjunto de habilidades
+você aborda o ML                                                                    . Calibração
+                          . Infraestrutura de ML     Tecnologia      Processos        
+                          . Orquestração                                            . Fluxos de trabalho
+
+Usando MLOps
+
+Os aplicativos que expôem modelos treinados podem ter requisitos e estratégias de hospedagem diferentes dos aplicativos padrão. Os modelos treinados são sensíveis às mudanças nos dados;
+portanto, um aplicativo baseado em modelo que funciona bem quando implementado pela primeira vez pode não funcionar tão bem dias, semanas ou meses após a implementaçao. Para explicar
+essas diferenças, você precisa de processos e procedimentos diferentes para aplicativos baseados no gerenciamento de ML.
+
+O MLOps considera os aspectos exclusivos dos projetos de inteligência artifical e machine learning (AI/ML) em gerenciamento de projetos, integração e entrega contínuas (CI/CD) e garantia
+de qualidade. Com isso você pode melhorar o tempo de entrega, reduzir defeitos e tornar a ciência de dados mais produtiva.
+
+Objetivos dos MLOps
+
+Uma meta dos MLOps é colocar as cargas de trabalho de ML em produção e mantâ-las em operação. Para alcançar esse objetivo, o MLOps adota muitos princípios e práticas de DevOps para
+o desenvolvimento, treinamento, implantação, monitoramento e retreinamento de modelos de machine learning.
+O objetivo é usar MLOps para fazer o seguinte:
+
+> Aumentar o ritmo do ciclo de vida de desenvolvimento do modelo por meio da automação.
+> Melhorar as métricas de qualidade por meio de testes e monitoramento.
+> Promover uma cultura de colaboração entre data scientists, engenheiros de dados, engenheiros de software e operações de TI.
+> Fornecer transparência, explicabilidade, audbilidade e segurança dos modelos usando a governança de modelos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

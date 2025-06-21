@@ -1,0 +1,272 @@
+Práticas de IA responsável (Português) | Responsible Artificial Intelligence Practices (Portuguese)
+
+Introdução
+
+Neste curso, você vai aprender sobre práticas de inteligência artificial (IA) responsável.
+
+Na primeira seção deste curso, você terá uma introdução do que é a IA responsável. Você vai aprender a definir a IA responsável, entender os desafios que ela tenta superar e explorar as principais dimensões dessa IA.
+
+Amazon SageMaker | Amazon Bredrock
+
+m seguida, na próxima seção do curso, você vai mergulhar em alguns tópicos para o desenvolvimento de sistemas de IA responsável. Nesta seção do curso, você vai aprender sobre os serviços e as ferramentas que a AWS oferece para ajudar você com a IA responsável. Você também aprenderá sobre as considerações de IA responsável na seleção de um modelo e no preparo de dados para seus sistemas de IA.
+
+Por fim, na última seção do curso, aprenderá sobre modelos transparentes e explicáveis e o que significa para um modelo ser transparente e explicável. Também vai compreender sobre as compensações a serem consideradas entre proteção e transparência para um modelo de IA e os princípios do design centrado no ser humano para a IA explicável.
+
+IA responsável
+
+À medida que você desenvolve seu sistema de IA, seja uma aplicação de IA generativa ou tradicional, é importante incorporar a IA responsável.
+
+O que é IA responsável?
+
+A IA responsável se refere a práticas e princípios que garantem que os sistemas de IA sejam transparentes e confiáveis, ao mesmo tempo em que mitigam riscos potenciais e resultados negativos. Esses padrões responsáveis devem ser considerados durante todo o ciclo de vida de uma aplicação de IA. Isso inclui as fases iniciais de projeto, desenvolvimento, implantação, monitoramento e avaliação.
+
+                     IA responsável
+-------------------------------------------------------------------->
+
+Design  Desenvolvimento  Implantação  Monitoramento  Avaliação
+
+Para operar a IA com responsabilidade, as empresas devem garantir proativamente o seguinte sobre seus sistemas:
+
+. É totalmente transparente e responsável, com mecanismos de monitoramento e supervisão em vigor.
+
+. É gerenciado por uma equipe de liderança que tenha compromisso com estratégias de IA responsável.
+
+. É desenvolvido por equipe de liderança que tenha compromisso com estratégias de IA reponsável.
+
+. É construido seguindo as diretrizes de IA responsável.
+
+Que tipo de IA requer uma IA responsável?
+
+A IA responsável não é exclusiva de nenhuma forma de IA. Isso deve ser considerado ao criar sistemas de IA generativa ou tradicional.
+
+
+// IA TRADICIONAL
+
+Os modelos tradicionais de machine learning executam tarefas com base nos dados que você fornece. Eles podem fazer previsões como ordenação, análise de sentimentos, classificação de imagens e muito mais. No entanto, cada modelo pode realizar somente uma tarefa. E, para fazer isso com sucesso, o modelo precisa ser cuidadosamente treinado com base nos dados. Enquanto são treinados, eles analisam os dados e procuram padrões. Em seguida, esses modelos fazem uma previsão com base nesses padrões. 
+
+
+
+Alguns exemplos de IA tradicional incluem mecanismos de recomendação, jogos e assistência por voz.
+
+// IA GENERATIVA
+
+A inteligência artificial generativa (IA generativa) é executada em modelos de base (FMs). Esses modelos são pré-treinados em grandes quantidades de dados de domínio geral que estão além dos seus próprios dados. Eles podem realizar várias tarefas. Com base na entrada do usuário, geralmente na forma de texto chamado de prompt, o modelo realmente gera conteúdo. Esse conteúdo vem de padrões e relacionamentos de aprendizagem que capacitam o modelo a prever o resultado desejado. 
+
+
+
+Alguns exemplos de IA generativa incluem chatbots, geração de código e geração de texto e imagem.
+
+A IA generativa oferece valor comercial
+
+O potencial dos FMs é incrivelmente empolgante. Existem vários FMs disponíveis, cada um com pontos fortes e características únicas. 
+
+Espera-se que novas arquiteturas surjam no futuro, e essa diversidade de FMs vai desencadear uma onda de inovação. Isso tende a despertar os seguintes valores comerciais dos quais as empresas podem se beneficiar:
+
+. Criatividade: criação de novos conteúdos e ideias, incluindo conversas, histórias, imagens, vídeos e música.
+
+. Produtividade: melhoria radical da produtividade em todas as linhas de negócios, casos de uso e setores.
+
+. Conectividade: conexão e interação com clientes e organizações de novas maneiras.
+
+Desafios da IA responsável na IA tradicional e generativa
+
+Viés em sistemas de IA
+
+Precisão dos modelos
+
+O problema número um que os desenvolvedores enfrentam em aplicações de IA é a precisão. As aplicações de IA tradicional e generativa são alimentadas por modelos treinados em conjuntos de dados. Esses modelos podem fazer previsões ou gerar conteúdo com base somente nos dados em que são treinados. Se não forem treinados adequadamente, você obterá resultados imprecisos. Portanto, é importante abordar o viés e a variância em seu modelo.
+
+Escolha cada guia para saber mais sobre viés e variância.
+
+Viés
+
+O viés é um dos maiores desafios que um desenvolvedor enfrenta em sistemas de IA. Viés em um modelo significa que o modelo não possui recursos importantes dos conjuntos de dados. Isso significa que os dados são muito básicos. O viés é medido pela diferença entre as previsões esperadas do modelo e os valores reais que estamos tentando prever. Se a diferença for estreita, o modelo tem viés baixo. Se a diferença for grande, o modelo terá um viés alto. 
+
+
+
+Quando um modelo tem um viés alto, ele está subajustado. Subajustado significa que o modelo não está capturando diferenças suficientes nos recursos dos dados e, portanto, o modelo tem um desempenho ruim nos dados de treinamento.
+
+
+
+Compensação entre viés e variância
+
+A compensação entre viés e variância ocorre quando você otimiza seu modelo com o equilíbrio certo entre viés e variância. Isso significa que você precisa otimizar seu modelo para que ele não fique subajustado ou sobreajustado. O objetivo é obter um modelo treinado com o menor viés e a menor compensação de variância para um determinado conjunto de dados. 
+
+Analise esses exemplos de modelos que estão subajustados, sobreajustados e balanceados.
+
+Subajustado:
+
+No exemplo subajustado, o viés é alto e a variância é baixa. Aqui, a regressão é uma linha reta. Isso nos mostra que o modelo está subajustando os dados porque não está capturando todos os recursos dos dados.
+
+Sobreajustado:
+
+No exemplo subajustado, o viés é alto e a variância é baixa. Aqui, a regressão é uma linha reta. Isso nos mostra que o modelo está subajustando os dados porque não está capturando todos os recursos dos dados.
+
+Balanceado:
+
+No exemplo balanceado, o viés é baixo e a regressão é baixa. Aqui, a regressão é uma curva. Isso é o que você quer. Ele está capturando recursos suficientes dos dados, sem capturar ruídos.
+
+Para ajudar a superar erros de viés e variância, você pode usar o seguinte:
+
+Validação cruzada
+
+A validação cruzada é uma técnica para avaliar modelos de ML, treinando vários modelos de ML em subconjuntos dos dados de entrada disponíveis e avaliando-os no subconjunto complementar dos dados. A validação cruzada deve ser usada para detectar sobreajustes.
+
+Aumentar os dados
+
+Adicione mais amostras de dados para aumentar o escopo de aprendizado do modelo.
+
+Regularização
+
+Use a regularização. A regularização é um método que penaliza valores extremos de peso para ajudar a evitar que modelos lineares ajustem excessivamente exemplos de dados de treinamento.
+
+Modelos mais simples
+
+Use arquiteturas de modelos mais simples para ajudar no sobreajuste. Se o modelo estiver subajustado, o modelo pode ser muito simples.
+
+Redução de dimensão (análise de componentes principais)
+
+Aplique a redução de dimensão. A redução de dimensão é um algoritmo de machine learning não supervisionado que tenta reduzir a dimensionalidade (número de recursos) em um conjunto de dados e, ao mesmo tempo, reter o máximo de informações possível.
+
+Interrupção do treinamento
+
+Encerre o treinamento mais cedo para que o modelo não memorize os dados.
+
+Desafios da IA Generativa
+
+Assim como a IA generativa tem seu conjunto exclusivo de benefícios, ela também tem um conjunto único de desafios. Alguns desses desafios incluem toxicidade, alucinações, propriedade intelectual, plágio e fraude.
+
+
+
+Analise cada tópico para saber mais.
+
+Toxicidade:
+
+Toxicidade é a possibilidade de gerar conteúdo (seja texto, imagens ou outras modalidades) que seja ofensivo, perturbador ou impróprio. Essa é a principal preocupação com a IA generativa. É difícil até mesmo definir e avaliar a toxicidade. A subjetividade envolvida na determinação do que constitui conteúdo tóxico é um desafio adicional, e a fronteira entre restringir conteúdo tóxico e censura pode ser obscura e dependente do contexto e da cultura. 
+
+
+
+Por exemplo, citações que seriam consideradas ofensivas fora de contexto deveriam ser suprimidas, mesmo se forem claramente rotuladas como citações? E quanto a opiniões que podem ser ofensivas para alguns usuários, mas estão claramente rotuladas como opiniões? 
+
+
+
+Os desafios técnicos incluem conteúdo ofensivo que pode ser redigido de forma muito sutil ou indireta, sem o uso de linguagem obviamente inflamatória.
+
+Alucinações:
+
+Alucinações são afirmações ou declarações que parecem plausíveis, mas são comprovadamente incorretas. Considerando a amostragem de distribuição de palavra seguinte empregada por grandes modelos de linguagem (LLMs), talvez não seja surpreendente que, em casos de uso mais objetivos ou factuais, os LLMs sejam suscetíveis a alucinações. 
+
+
+
+Por exemplo, um fenômeno comum com os LLMs atuais é a criação de citações científicas inexistentes. Suponha que um LLM receba a solicitação: “Fale-me sobre alguns artigos de” um autor específico. O modelo não está realmente procurando por citações legítimas, mas gerando citações a partir da distribuição de palavras associadas a esse autor. O resultado pode incluir títulos e tópicos realistas na área do autor. No entanto, esses artigos podem não ser reais e podem incluir coautores plausíveis, mas não os reais.
+
+Propriedade intelectual:
+
+Proteger a propriedade intelectual era um problema com os primeiros LLMs. Isso porque os LLMs tinham a tendência de produzir ocasionalmente passagens de texto ou código que continham partes integrais de seus dados de treinamento, resultando em violações de privacidade e outras preocupações. Mas mesmo as melhorias nesse sentido não impediram reproduções de conteúdos de treinamento mais ambíguos e com nuances.
+
+
+
+Considere o seguinte prompt para um modelo generativo de imagem: “Crie uma pintura de um gato de skate no estilo de Andy Warhol”. Se o modelo for capaz de fazer isso de maneira convincente, mas ainda assim original, porque foi treinado com imagens reais de Warhol, podem surgir objeções a essa imitação.
+
+Plágio e fraude:
+
+As capacidades criativas da IA generativa geram preocupações de que ela seja usada para escrever artigos universitários, redigir amostras para candidaturas a vagas de emprego e outras formas de fraude ou escrita ilícita. Debates sobre esse tópico estão acontecendo em universidades e muitas outras instituições, e as atitudes variam muito. 
+
+
+
+Alguns são a favor da proibição explícita de qualquer uso de IA generativa em ambientes em que o conteúdo está sendo avaliado ou pontuado, enquanto outros argumentam que as práticas educacionais devem se adaptar e até mesmo adotar a nova tecnologia. Mas o desafio subjacente de verificar se um determinado conteúdo foi criado por uma pessoa provavelmente apresentará preocupações em muitos contextos.
+
+Disrupção da natureza do trabalho:
+
+A proficiência com a qual a IA generativa é capaz de criar textos e imagens convincentes, ter um bom desempenho em testes padronizados, escrever artigos inteiros sobre determinados tópicos e resumir ou melhorar com sucesso a gramática dos artigos fornecidos criou certa ansiedade. Existe a preocupação de que algumas profissões possam ser substituídas ou sofrer uma disrupção importante pela tecnologia. 
+
+
+
+Embora isso possa ser prematuro, parece que a IA generativa terá um efeito transformador em muitos aspectos do trabalho. É possível que muitas tarefas anteriores à automação possam ser delegadas às máquinas.
+
+Principais dimensões da IA responsável
+
+As principais dimensões da IA responsável incluem imparcialidade, explicabilidade, privacidade e segurança, robustez, governança, transparência, proteção e controlabilidade. Nenhuma dimensão é uma meta independente para a IA responsável. Na verdade, cada tópico deve ser considerado como uma parte necessária para uma implementação completa da IA responsável.
+
+Você descobrirá que há uma sobreposição considerável entre muitos desses tópicos. Por exemplo, você verá que, ao implementar a transparência no seu sistema de IA, elementos de explicabilidade, imparcialidade e governança serão necessários. Depois, você vai explorar como cada um desses tópicos é usado na IA responsável.
+
+Imparcialidade
+
+A imparcialidade é crucial para o desenvolvimento de sistemas de IA responsável. Com imparcialidade, os sistemas de IA promovem a inclusão, evitam a discriminação, defendem valores responsáveis e normas legais e criam confiança na sociedade. 
+
+Você deve considerar a imparcialidade em suas aplicações de IA para criar sistemas adequados e benéficos para todos.
+
+Explicabilidade
+
+A explicabilidade se refere à capacidade de um modelo de IA explicar claramente ou fornecer justificativas para suas decisões e seus mecanismos internos, de forma que seja compreensível para os humanos. 
+
+Os humanos devem entender como os modelos estão tomando decisões e abordar quaisquer questões de viés, confiança ou imparcialidade.
+
+Privacidade e segurança
+
+A privacidade e segurança na IA responsável se referem aos dados protegidos contra roubo e exposição. Mais especificamente, isso significa que, em um nível de privacidade, os indivíduos controlam quando e se seus dados podem ser usados. No nível de segurança, ele verifica se nenhum sistema não autorizado ou usuário não autorizado terá acesso aos dados do indivíduo.
+
+Quando isso é implementado e implantado adequadamente em um sistema de IA, os usuários podem confiar que seus dados não serão comprometidos e usados sem sua autorização.
+
+A transparência comunica informações sobre um sistema de IA para que os stakeholders possam fazer escolhas bem informadas sobre o uso do sistema. Algumas dessas informações incluem processos de desenvolvimento, recursos do sistema e limitações.
+
+Ela fornece acesso a indivíduos, organizações e stakeholders para avaliar a imparcialidade, robustez e explicabilidade dos sistemas de IA. Esses elementos podem identificar e mitigar possíveis vieses, reforçar padrões responsáveis e promover a confiança na tecnologia.
+
+Veracidade e robustez
+
+A veracidade e robustez na IA se referem aos mecanismos para garantir que um sistema de IA opere de forma confiável, mesmo com situações inesperadas, incertezas e erros. 
+
+O objetivo da veracidade e robustez na IA responsável é desenvolver modelos de IA que sejam resilientes às mudanças nos parâmetros de entrada, distribuições de dados e circunstâncias externas. 
+
+Isso significa que o modelo de IA deve manter a confiabilidade, precisão e proteção em ambientes incertos.
+
+A governança é um conjunto de processos usados para definir, implementar e aplicar práticas de IA responsável dentro de uma organização.
+
+A governança aborda vários problemas responsáveis, legais ou sociais que a IA generativa pode provocar. 
+
+Por exemplo, as políticas de governança podem ajudar a proteger os direitos dos indivíduos à propriedade intelectual. Ela também pode ser usada para garantir a conformidade com leis e regulamentos. A governança é um componente vital da IA responsável para uma organização que busca incorporar práticas recomendadas responsáveis.
+
+Proteção
+
+A proteção na IA responsável se refere ao desenvolvimento de algoritmos, modelos e sistemas de forma que sejam responsáveis, seguros e benéficos para os indivíduos e a sociedade como um todo. 
+
+Isso significa que os sistemas de IA devem ser cuidadosamente projetados e testados para evitar causar danos não intencionais aos seres humanos ou ao ambiente como um todo. Aspectos como viés, uso indevido e impactos descontrolados precisam ser considerados proativamente.
+
+Controlabilidade
+
+A controlabilidade na IA responsável se refere à capacidade de monitorar e orientar o comportamento de um sistema de IA para se alinhar aos valores e intenções humanos. Envolve o desenvolvimento de arquiteturas controláveis, para que quaisquer problemas não intencionais possam ser gerenciados e resolvidos.
+
+Ao garantir a controlabilidade, a IA responsável pode ajudar a mitigar riscos, promover a imparcialidade e transparência e garantir que os sistemas de IA beneficiem a sociedade como um todo.
+
+Benefícios comerciais da IA responsável
+
+A IA responsável oferece os principais benefícios comerciais no desenvolvimento e na implantação de sistemas de IA.
+
+Maior confiança e reputação
+
+É mais provável que os clientes interajam com aplicações de IA se acreditarem que o sistema é justo e seguro. Isso aumenta a reputação e o valor da marca.
+
+Conformidade regulatória
+
+À medida que as regulamentações de IA surgem, as empresas com estruturas éticas robustas de IA ficam mais bem posicionadas para cumprir as diretrizes sobre privacidade de dados, imparcialidade, responsabilidade e transparência.
+
+Mitigação de riscos
+
+As práticas de IA responsável ajudam a mitigar riscos como viés, violações de privacidade, violações de segurança e impactos negativos não intencionais na sociedade. Isso reduz as responsabilidades legais e os custos financeiros.
+
+Vantagem competitiva
+
+As empresas que priorizam a IA responsável podem se diferenciar dos concorrentes e obter uma vantagem competitiva, especialmente à medida que a consciência do consumidor sobre a ética da IA cresce.
+
+Melhoria na tomada de decisão
+
+Os sistemas de IA criados com imparcialidade, responsabilidade e transparência em mente são mais confiáveis e menos propensos a produzir resultados enviesados ou falhos, o que leva a melhores decisões orientadas por dados.
+
+Produtos e negócios aprimorados
+
+A IA responsável incentiva uma abordagem diversificada e inclusiva para o desenvolvimento da IA. Por se basear em perspectivas e experiências variadas, ela pode gerar soluções mais criativas e inovadoras.
+
+
+
+
+

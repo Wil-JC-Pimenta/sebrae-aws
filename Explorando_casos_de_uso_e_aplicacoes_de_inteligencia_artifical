@@ -1,0 +1,51 @@
+Explorando casos de uso e aplicações de Inteligência artificial
+
+Introdução
+
+Neste curso, você explorará os casos de uso do mundo real de inteligência artificial (IA), machine learning (ML) e inteligência artificial generativa (IA generativa) em uma variedade de setores, como saúde, finanças, marketing, entretenimento e muito mais. Você também aprenderá sobre os recursos e as limitações da IA, de ML e da IA generativa, as técnicas de seleção de modelos e as principais métricas de negócios.
+
+Transcrição de vídeo: Boas-Vindas
+
+Inteligência artificial (IA). Vamos nos aprofundar em casos de uso e aplicações práticas. 
+
+Muitos setores usam a IA, como fabricação, saúde, ensino, varejo, ciências biológicas, transporte, mídia e entretenimento, além de muito mais. A IA transformou esses setores ao aumentar a produtividade dos funcionários, estimular a criatividade, melhorar as operações de negócios e aprimorar as experiências dos clientes. Resumo de texto, geração de códigos, geração de imagens, vídeos e textos, criação de músicas, localização de conteúdo, chatbots, assistência virtual, detecção de anomalias, assistência de manutenção e analytics da central de atendimento são maneiras pelas quais a IA transforma como as empresas operam e tomam decisões. Neste curso, revelaremos as possibilidades infinitas e o potencial transformador da IA para definir o mundo.
+
+Objetivos do aprendizado
+
+Identificar exemplos de aplicações da IA do mundo real.
+Reconhecer casos de uso e soluções em que a IA pode atender às necessidades de negócios.
+Determinar quando as soluções de IA e ML não são adequadas.
+Identificar os casos de uso que usam técnicas de ML, como aprendizado supervisionado, não supervisionado e por reforço.
+Identificar as capacidades da IA generativa.
+Identificar os desafios da IA generativa.
+Identificar os fatores a serem considerados ao selecionar os modelos de IA generativa.
+Determinar as métricas de negócios para as aplicações da IA generativa.
+
+Machine learning
+
+Lembrete: ML é um subconjunto da IA que se concentra no desenvolvimento de algoritmos e modelos estatísticos para que os sistemas de computador possam aprender com os dados e fazer previsões ou decisões sem serem programados de maneira explícita. Os modelos de ML aprendem padrões e relacionamentos com base nos dados em vez de confiar em regras codificadas para receber instruções. São modelos treinados em grandes conjuntos de dados, e a acurácia e o desempenho melhoram com o tempo à medida que mais dados são processados. 
+
+Nesta seção, você aprenderá sobre quando o ML é uma solução adequada e as técnicas usadas para casos de uso específicos.
+
+Inteligência Artifical (IA)
+Machine Learning (ML)
+Aprendizado Profundo (DL)
+IA Generativa (IA)
+
+Quando a IA e o ML são soluções adequadas
+
+Para determinar a solução adequada de IA, é preciso entender quando usar a IA a fim de resolver um problema de negócios. A IA é uma boa opção para estes casos de uso:
+
+Codificar as regras é um desafio: muitas tarefas humanas não podem ser resolvidas de maneira adequada com o uso de soluções simples baseadas em regras. Pense na filtragem de spam, por exemplo. Determinar se um e-mail recebido é legítimo ou spam é uma tarefa complexa que nem sempre pode ser realizada com eficácia por meio de um conjunto de regras predefinidas. Há muitas variáveis em jogo. Quando as regras dependem de muitos fatores, têm sobreposições ou precisam ser aprimoradas, fica difícil para seres humanos codificá-las com precisão. O ML pode ser usado para resolver esse tipo de problema com eficácia.
+
+A escala do projeto é difícil: no exemplo da filtragem de spam, uma pessoa pode ver algumas centenas de e-mails e decidir se são spam ou não. No entanto, escalar essa tarefa para fazer a varredura de milhões de e-mails seria entediante e ineficiente. As soluções de ML são adequadas para problemas em grande escala como no exemplo.
+
+Abordagem alternativa para IA e ML
+
+Você observou na seção anterior que a IA pode resolver muitos problemas. De qualquer forma, pode haver situações em que abordagens alternativas sejam mais adequadas. Considere todas as abordagens e selecione a mais adequada com base nos requisitos e nas limitações específicas da tarefa. 
+
+Por exemplo, você não precisa do ML se conseguir determinar um valor-alvo usando regras simples, cálculos ou etapas predeterminadas. É possível programar as etapas sem precisar de qualquer aprendizado baseado em dados.
+
+Você aprendeu quando a IA e o ML são adequados e quando uma solução alternativa é adequada. A seguir, aprenderá sobre as técnicas de ML para selecionar um modelo.
+
+

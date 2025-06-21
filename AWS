@@ -1,0 +1,743 @@
+AWS certified AI Practitioner
+
+AWS - SEBRAE STARTUPS
+
+GUIA DE ESTUDOS
+
+Guia de Auto Estudo - Recomendações para conhecer a IA generativa da AWS
+
+STARTUP na Nuvem
+
+Você sabia que os empregadores estão dispostos a pagar 43% a mais para contratar trabalhadores qualificados em IA para vendas e marketing, 42% a mais para aqueles na área de finanças, 41% a mais para operações comerciais e 47% a mais para profissionais de TI, segundo um estudo da AWS realizado em novembro de 2023. Conheça a nova certificação AWS – AWS Certified AI Practitioner A certificação AWS Certified AI Practitioner valida o conhecimento requisitado sobre inteligência artificial, machine learning (ML) e conceitos e casos de uso de IA generativa. Melhore sua vantagem competitiva e posicione-se para crescer profissionalmente e obter maiores ganhos. Indivíduos que estão familiarizados com soluções que usam tecnologias de IA e ML na AWS. Esta certificação é válida por 3 anos e você pode ler as informações completas dentro da Guia do Exame (AIF- C01) que subimos aqui na plataforma para você. Duração do exame: 90 minutos. Como a certificação AWS Certified AI Practitioner ajudará na minha carreira? Profissionais de vendas, marketing e gerenciamento de produtos estarão mais bem posicionados para ter sucesso em suas carreiras desenvolvendo habilidades por meio de treinamentos e validando o conhecimento por meio de certificações como a AWS Certified AI Practitioner. Chegou a hora, prepare-se para o exame! Agora te convidamos a se preparar para o exame, como começar do zero até obter a certificação. Siga nosso plano de preparação para o exame, siga nosso plano de aprendizado online para encarar o exame com confiança e validar seus conhecimentos. Descubra novas possibilidades de carreira com a nova certificação da AWS Certified AI Practitioner, junte-se a nós nessa sessão e se prepare para a AWS Certified AI Practitioner. Nós preparamos uma jornada de autoestudo de 10 horas de conhecimento, dividida em 3 semanas. Ao final da terceira semana, você vai poder realizar um Exame final para avaliar sua preparação para o exame de certificação. Clique no link abaixo e comece agora a aprofundar seu conhecimento: Preparação para a Certificação de AWS AI Practitioner Bons Estudos! Time de Treinamentos Massivos AWS LATAM 
+
+Descubra novas possibilidades de carreira com a nova certificação da AWS Certified AI Practitioner
+Junte-se a nós nessa sessão e se prepare para a AWS Certified AI Practitioner e descubra novas possibilidades de carreira com esta certificação de IA.
+
+A certificação AWS Certified AI Practitioner valida o conhecimento requisitado sobre inteligência artificial, machine learning (ML) e conceitos e casos de uso de IA generativa. Melhore sua vantagem competitiva e posicione-se para crescer profissionalmente e obter maiores ganhos.
+
+https://aws.amazon.com/pt/certification/certified-ai-practitioner/
+
+AWS Discovery Day
+Generative AI
+AWS Certified AI practitioner
+Guilherme Hasse Sr. Digital Engagement Mggr. 
+Treinamento e certificação AWS
+
+Agenda
+1.Sobre o exame
+2.Revisão de domínios da certificação
+3.Fechamento
+
+About The Exam
+
+AWS Certified AI Practitioner - Exam details
+
+Category__________________Foundational
+Exam duration_____________120 minutes
+Exam format_______________85 questions
+Score_____________________Scaled score 100-1,000; Min. passing core 700 - 15 unscored questions
+Cost______________________75 USD
+Candidate role examples___Business analyst, IT support,marketing professional, product or project manager, life-of-bussiness or IT manager, sales professional
+Languages offered_________English, Japanase
+*during the beta timeframe, until Oct.13th.
+Results avaiable within 5 bussiness days after the exam.
+
+Questions Types
+
+* Multiple choice
+
+1)A Customer X in facing problems to store large amount of images in a scalable object store. This Customer wants to store thousands of 1GB images using HTTPS transfe. What is the best AWS services to solve this problem?
+
+a)AWS Transfer Acceleration [ ]
+b)Amazon S3 [X]
+c)Amazon EBS [ ]
+d)Amazon EFS [ ]
+
+* Matching
+
+1)  customer is facing problems storing a large number of images in a scalable object store. This customer wants to store thousands of 1GB images.
+Mach the correct AWS Storage Gateway setup process
+
+| Component                              | Task                                             |
+| -------------------------------------- | ------------------------------------------------ |
+| **IAM Identity Center**                | Set up credentials with administrator privileges |
+| **Local Data Center VM**               | Install and set up the virtual gateway           |
+| **Local Data Center Active Directory** | Create a service account                         |
+| *(not tied to a specific component)*   | Sign up for an AWS account                       |
+| *(not tied to a specific component)*   | Transfer your local files to the virtual gateway |
+
+*Multiple response
+
+1) Customer X is facing problems to store a largeamount of images in a scalable object store. This Customer wants to store thousands of 1GB images.
+What are viable AWS services to transfer files from his Data Center to the Cloud?(choose 2 answers)
+
+a)AWS Storage Gateway [x]
+b)AWS Snowball [x]
+CAmazon Redshift [ ]
+d)Amazon RDS [ ]
+
+* Case study
+1)A Customer X is facing problems to manage and store a large amount of images in a scalable object store. This Customer has a reduced number of employees in IT. With a big pressure from the CFO and CMO, this Customer with Machine Learning to understand better their customer trends and collect some insights. [ Question 1) ] - [Question 2)] - [Question 3)]
+
+* Ordering
+1) A Customer X is facing problems to store a large amount of images in a scalable object store. This Customer wants to store thousands of 1GB images.
+What are the correct order of steps a Customer needs to follow to install AWS Storage Gateway?
+
+1   ----   Transfer your local files to the virtual gateway
+2   ----   Install and setup the virtual gateway
+3   ----   Create an Active Directory service account
+4   ---- Sing-up for AWS account
+
+
+Exam Domanins
+
+1. Fundamentals of AI and ML
+2. Fundamentals of Generative AI
+3. Applications or Foundation Models
+4. Guidelines for Responsible AI
+5. Security, Compliance, and Governance for AI Solutions
+
+List of services and features
+
+Analytics:
+
+*AWS Data Exchange
+*Amazon EMR
+*AWS Glue
+*AWS Glue DataBrew
+*AWS Lake Formation
+*Amazon OpenSearch Service
+*Amazon RedShift
+
+Database:
+*Amazon DocumentDB
+*Amazon DynamoDB
+*Amazon ElastiCache
+*Amazon MemoryDB
+*Amazon Neptune
+*Amazon RDS
+
+Networking and Content Delivery:
+
+*Amazon CloudFront
+*Amazon VPC
+
+Security, Identify, and Compliance:
+
+*AWS Artifact
+*AWS Audit Manager
+*AWS Identify and Acess Management(IAM)
+*Amazon Inspector
+*AWS Key Management Service(AWS KMS)
+*Amazon Macie
+*AWS Secrets Manager
+
+Storage:
+
+*Amazon S3
+*Amazon s3 Glacier
+
+Machine Learning:
+
+*Amazon Augmented AI
+*Amazon Bedrock
+*Amazon Comprehend
+*Amazon Fraud Detector
+*Amazon Kendra
+*Amazon Lex
+*Amazon Personalize
+*Amazon Polly
+*Amazon Q
+*Amazon Rekognition
+*Amazon SageMaker
+*Amazon Transcribe
+*Amazon Translate
+
+Cloud Financial Management:
+*AWS Budgets
+*AWS Cost Explorer
+
+Management and Governance:
+
+*AWS CloudTrail
+*Amazon CloudWatch
+*AWS Config
+*AWS Trusted Advisor
+*AWS Well-Architected Tool
+
+Compute:
+
+*Amazon EC2
+*Amazon ECS
+*Amazon EKS
+
+Out of scope services & features
+
+Machine Learning:
+
+*AWS DeepComposer
+*AWS HealthImaging
+*AWS HealthOmics
+*Amazon Monitron
+*AWS Program
+
+Management and Governance:
+
+*AWS Control Tower
+*AWS Health Dashboard
+*AWS License Manager
+*AWS OpsWorks
+*AWS Organizations
+*AWS Service Catalog
+*Service Quotas
+
+Migration and Transfer:
+
+*AWS Application Discovery Service
+*AWS Application Migration Service
+*AWS Database Migration Service
+*AWS DataSync
+*AWS Mainframe Modernization
+*AWS Mainframe Hub
+*AWS Migration Hub
+*AWS Snow Family
+*AWS Transfer Family
+
+*consult the exam guide for a full list of out of scope services
+
+Domain  1
+
+Task Statement 1.1:Explain basic AI concepts and terminologies
+Task Statement 1.2:Identify practical use cases for AI
+Task Statement 1.3:Describe the ML development lifecycle
+
+(|) Artificial inteligence (AI)
+ |   Any technique that enables computers to mimic human intelligence
+ |
+ |___(|) Machine Learning (ML)
+      |
+      |    A subset of AI that users machines to search for patterns 
+      |    in data to build logic, models automatically
+      |
+      |______(|) Classification AI and Predictive AI
+      |           A subset of ML, that recognizes patterns to identify something
+      |           (Classification AI) or predicts future trends based on statistical patterns
+      |           and historical data(Predictive AI)
+      |
+      |______(|) Generative AI
+                  A subset of DL  that can  create new content and ideas powered by large,
+                  pretrained models called foundation models (FMs)
+
+AWS Documentation!! Decision Guide
+
+Choosing an AWS machine learning service
+
+Enhance customer experience:
+
+AI-powered contact center
+Chatbots and virtual assistants
+Personalization
+Identify Verification
+Content moderation
+
+Boost employee productivity & creativity:
+
+Emplooye assistants
+Content generation
+Forecasting
+Code generation
+Report generation
+
+Improve business operations:
+
+Document processing
+Fraud Preventions
+Predictive maintenance
+Machine translation
+Visual inspection
+Process optimization
+
+New product and services:
+
+New use cases
+
+Healthcare & life sciences:
+
+Ambient digital scribes, improve patient outcomes, drug, discovery, medical, assistant, madical imaging
+
+Industrial & manufacturing:
+
+Predictive maintenance, product design, maintenance assistants, improve workplace safety, automate visual inspection, and optimize supply chains
+
+Financial Services:
+
+Detect fraud, process document faster, portfolio management,personalize recommendations, compliance assistants
+
+Retail:
+
+Personalize product recommendations, pricing optimization, product descriptions,forecast demand, and fraud detection
+
+Media & entertainment:
+
+Content creation and curation, automated content tapping, hyper personalization, enrich broadcast content, and improve monetization
+
+AWS Machine Learning Blog
+
+Explore the many sources of information
+
+AWS Website, documentation
+AWS Machine Learning Blog
+AWS Skill Builder
+AWS partner training
+
+Domain 2 - Fundamentals of Generative AI
+
+Taks Statement 2.1:Explain the basic of Generative AI
+Task Statement 2.2:Understand the capablities and limitations os generative AI for solving business problem
+Task Statement 2.3:Describe AWS infrastructure and technologies for building generative AI applications
+
+Generative AI
+
+DATA Foundation
+
+Storage
+Governance & Compliance
+Databases, Analytics & Data Lakes
+Data Integration
+
+
+Understand Foundational generative AI Concepts
+
+Input methods
+
+IoT/devices
+People/App/logs
+Thirt-party data
+
+Capabilities, behaviors, limitations
+
+Generative AI Concepts
+
+Tokens                   Vectors
+Chucking                 Prompt engineerins
+Embeddings               LLM's
+Diffusion models         Foundation Models
+Hallucination            Fine-tuning
+
+Use Cases
+
+IMAGE/VIDEO PROCESSING               -------------> Quality assurance
+MEDIA/CODE GENERATION                -------------> Multi content output
+SUMMARIZATION, TRANSLATION, CHATBOT  -------------> People interaction
+
+Foundation Model Lifecycle
+Data selection, model selection, pre-training, fine-tuning, evaluation, deployment, feedback
+
+Make generative AI work with your data
+
+RETRIEVAL-AUGMENTED GENERATION (RAG)
+
+Specilized knowledge trough prompt augmentation 
+Enterprise knowledge corpus
+No change to the foundation model
+
+FINE-TUNING
+
+Specilized knowledge for especific tasks
+Small number of labeled examples
+Change a copy of the foundation model
+
+CONTINUED PRE-TRAINING
+
+Generalized and specialized knowledge for yous domain 
+Unlabeled, unstructured enterprise data
+Change a copy of the foundation model
+
+Generative AI Stack
+
+APPLICATION THAT LEVERAGE LLMs AND FMs
+
+Amazon Q Business
+Amazon Q Developer
+Amazon Q in QuickSight
+Amazon Q in Connect
+Amazon Q in AWS Supply Chain
+
+TOOLS TO BUILD WITH LLMs AND OTHER FMs
+
+Amazon Bedrock
+Guardrails | Agents | Studio | Customization Capabilities | Broadest selection of models
+
+INFRASTRUCTURE FOR FM TRAINING AND INFERENCE
+GPUs | Trainium | Inferentia | SageMaker | UltraClusters | EFA | Ecs Capacity Blocks | Nitro | Neuron
+
+Amazon Q Use Cases
+
+Business:
+
+AMAZON Q Bussiness
+
+KNOWLEDGE SEARCH
+SUMMARIZATION
+CONTENT CREATION
+EXTRACT INSIGHTS
+RESEARCH & ANALYSIS
+
+AMAZON Q in QuickSight
+
+UNDERSTAND DATA
+BUILD & REFINE VISUALS
+BUILD CALCULATIONS
+EXECUTIVE SUMMARIES
+CREATE DATA STORIES
+
+Developers:
+
+AMAZON Q Developers
+
+PLAN APPLICATION
+CODE GENERATION
+UNIT TESTING
+SECURITY SCANNING
+CODE REMEDIATION
+CODE MIGRATION
+TROUBLESHOOTING
+DEVELOPER KNOWLEDGE
+
+Especialized Users:
+
+AMAZON Q in Connect
+
+AGENT ASSIST
+
+AMAZON Q in AWS Supply Chain
+
+SUPPLY CHAIN
+
+DOMAIN 3: Applications of Foundations Models
+
+Task Statement 3.1:Describe design considerations for applications that use foundation models
+
+Task Statement 3.2:Choose effective prompt engineering techniques
+
+Task Statement 3.3:Describe the training and fine-tuning process for foundation models
+
+Task Statement 3.4: Describe methods to evaluate foundation model performance
+
+AWS Documentation!!
+
+Model Explainability with AWS  Artificial Intelligence  and Machine Learning Solutions
+
+Effective Prompt Engineering
+
+Prompt engineering is the process of designing and refining the prompts or input stimuli for a language model to generate specific types of output
+
+[What is this image about]
+
+Classify the following images as either sports, politics, travel or food
+[image1], [image2], [image 3] are examples of a new category 'ice-creams'
+Classify the following images as ice-creams
+
+Foundations Models - fine-tuning and performance
+
+FM
+
+Pre-training
+Fine-tuning
+Continuous pre-training
+
+Evaluate foundation model performance
+
+Fine-tuning
+
+Instruction tuning adapting models for domains trabsfer learning continuous pre-training
+
+Domain 4: Guidelines for Responsible AI
+
+Task Statement 4.1:Explain the development of AI systems that are responsible
+Taks Statement 4.2:Recognize the importance of transparent and explainable models
+
+With growth of AI comes the recognition that we must all use it responsibly
+
+Our commitment to develop AI and machine learning in a responsible way is integral to our approach
+Transform responsible AI from theory to practice
+Integrate responsible AI into the end-to-end ML lifecycle
+Nurture and educate a more diverse generation of leaders in ML
+Advance the science behind responsible AI
+
+Responsible AI Dimensions
+
+FAIRNESS
+Considering impacts on different groups of stakeholders
+
+EXPLAINABILITY
+Understanding and evaluating system outputs
+
+CONTROLLABILITY
+Having mechanisms to monitor and steer AI system behavior
+
+SAFETY
+Preventing hamful system output and misuse
+
+PRIVACY & SECURITY
+Appropriately obtaining, using and protectiong dada and models
+
+GOVERNANCE
+Incorporating best practices into the AI supply chain including providers and deployers
+
+TRANSPARENCY
+Enabling stakeholders to make informed choices about theus engagement with an AI system
+
+VERACITY & ROBUSTNESS
+Achieving correct, system outputs, even with unexpected or adversarial inputs
+
+Responsible AI:
+Best practices
+
+Put your people first
+Asses risk on a (use) case-by-case basis
+Interate across the AI lifecycle
+Test, test again, and then test again
+
+Governance on AWS
+
+Control where your data sits, who has access to it, and what can be done with it
+ENDER USER CRITICAL PATH
+
+AWS identity and Acess Management
+Amazon Cognito
+
+BEHIND THE SCENES
+
+AWS Glue
+Enable data quality data cataloging, and metadata
+
+AWS Lake Formation
+Enable centralized permissions and fine-grained access controls
+
+Amazon DataZone
+Bussiness catalog, discover, share, and govern data across the organization
+
+Amazon SageMaker Governance for ML
+Get end-to-end visibility into ML models
+
+Conversational AI
+
+VOICE AND TEXT-BASED INTERFACES TO ENHANCE END USER  EXPERIENCE AND INCREASE CUSTOMER SATISFACTION
+
+Use case categories
+
+Self-service bots
+Virtual agents and assistants
+Transactional bots
+Proactive help based on usage behavior
+
+Benefits
+Enable new ways of engagement
+Increase customer satisfaction
+Reduce operational costs
+Streamline business processes
+
+Customer references
+MetroPlusHealtch | TechStyle FASHION GROUP | Dropbox | 0 STATE | TransUnion | govchat | RYANAIR | origin | WAFd Bank | Saint Louis University
+
+Underlying AI Services
+Amazon Lex | Amazon Polly | Amazon Kendra | Amazon Comprehend | Amazon Translate
+
+Solution
+QnBot_on_AWS
+
+Intelligent document processing 
+
+MAKE FASTER DECISIONS BY AUTOMATICALLY EXTRACTING AND ANALYZING DATA FROM DOCUMENTS
+
+Use case categories
+
+Insurance forms text extraction
+Mortgage applications data extraction
+Medical forms processing
+Financial
+
+Benefits
+
+Higher accuracy of data
+Faster data processing
+Improve employee productivity
+Cost savings
+
+Costumer references
+Alfrecso | CHANGE HEALTHCARE | COX AUTOMOTIVE | Ê | vidmob | BlueVine | THOMSON REUTTERS | Assent | Black Knight | PENNYMAC
+
+Al services
+Amazon Comprehend | Amazon Textract | Amazon Augmented AI
+
+ML Services
+Amazon SageMaker
+
+Solution
+Document understanding solution
+
+Solution
+Extract and analyze data from documents
+
+Intelligent Search
+
+GET THE MOST OUT OF YOUR DATA  WITH INTELLIGENT SEARCH
+
+Use case categories
+
+Improve costumer interactions
+Accelerate research and development
+Minimize regulatory & complicance risks
+Equip employees with the data they need
+
+Benefits
+
+Find answers faster across unstructured content
+Boost workforce productivity
+Enhance customer experiences
+Centralize acces to knowledge
+
+Customer references
+bakertilly CAPITAL | 3M | Magellan HEALTH. | GILEAD Creating Possible | Sage | CITIBOT | Woodside
+
+Underlying AI Services
+Amazon Kendra
+
+Predictive maintenance
+
+IMPROVE UPTIME  AND REDUCE INDUSTRIAL COSTS
+
+Benefits
+Detect abnormal conditions in industrial, equipment, and prevent problems before they occur
+Improve uptime of industrial equipment
+Reduce costs of unplanned downtime
+Allow reliability abd maintenance engineers to make more informed decisions
+
+Partners
+CloudRail | SeeQ | RADIX | TensorIoT | ROVISYS 
+
+Customer references
+KKOCH AG & ENERGY SOLUTIONS | GE Power | CEPSA | Fender | Georgia-Pacific
+
+Underlying AI Services
+Amazon Monitron
+Amazon Lookout for Equipment
+
+Solution
+Predictive Maintenance Using Machine Learning
+
+Forecasting
+
+FORECAST INVENTORY, PRODUCT DEMAND, FINANCIAL METRICS, AND WORKFORCE STAFFING
+
+Use case category
+
+Retail inventory forecasting
+Supply chain demand planning
+Revenue and financial metrics forecasting
+Workforce planning and staffing
+
+Benefits
+
+Grow retail sales thought fewer stockouts
+Lower costs by reducing wated inventory
+Increase profitability through improved product allocation
+Optimize workforce productivity & staffing
+
+Customer referances
+Anaplan | very | planalytics | More Mega | DeLonghi Group | meeshon | arneg | clearly | H Foxconn | Atlassian | SWIGGY | Course Hero
+
+Al Services
+Amazon Forecast
+
+ML Services
+Amazon SageMaker
+SageMaker Canvas
+
+Guidance
+Improving Forecast Accuracy With ML
+
+Solution
+Demand Forecastiing
+
+AMAZON SageMaker
+
+Build, train, and deploy ML models for and use case with fully managed infraestructure, tools, and workflows
+
+END-TO-END ML JOURNEY
+
+BUILD - TRAIN - DEPLOY
+
+Study  the many use cases of Amazon SageMaker
+
+AWS SKILL BUILDER - LEARNING PATH
+
+FREE
+
+Standard Exam Prep Plan: AWS Certified AI Practitioner (AIF-C01)
+
+Generative AI for Executives
+E-learning | Duration 13m | Mandatory
+Amazon Q Business Getting Started
+E-learnind | Duration 40m | Mandatory
+Amazon Bedrock Getting Started
+E-learning | Duration 1h | Mandatory
+Fundamentals of Machine Learning and Artificial Intelligence
+E-learning | Duration 1h | Mandatory
+Exploring Artificial Intelligence Use Cases ande Applications
+E-learning | Duration 1h | Mandatory
+Responsible Artificial Intelligence Practices
+E-learning | Duration 1h | Mandatory
+Developing Machine Learning Solutions
+E-learning | Duration 1h | Mandatory
+Developing Generative Artificial Intelligence Solutions
+E-learning | Duration 1h | Mandatory
+Essentials of Prompt Engineering
+E-learning | Duration 1h | Mandatory
+Optimizing  Foundation Models
+E-learning | Duration 1h | Mandatory
+Security Compliance, and Governance for AI Solutions 
+E-learning | Durarion 1h | Mandatory
+Exam Prep Standard Course: AWS Certified AI Practitioner(AIF-C01)
+E-learnind- | Duration 8h | Mandatory
+
+PAID
+
+Enhanced Exam Prep Plan: AWS Certified AI Practitioner(AIF-C01)
+Everything from Standard Examp Prep, plus:
+
+LAB Getting Started With Amazon Comprehend: Custom Classification 
+E-learning | Duration 1h 15m | Optional
+LAB Build a Question-answering Bot using Generative AI
+E-learning | Duration 1h 30m | Optional
+Exam Prep Enhanced Course: AWS Certified AI Practitioner(AIF-C01 - English)
+E-learning | Duration 14h 30m | Mandatory
+
+FREE
+
+Exam Prep Official Pratice Question Set: AWS Certified AI Practitioner (AIF-C01-English)
+
+PAID
+
+Exam Prep Official Pretest: AWS Certified AI Practitioner (AIF-C01-English)
+
+https://aws.amazon.com/pt/certification/certified-ai-practitioner/
+
+//------------------------------------------------------------------------------------------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Neste curso, você aprenderá sobre os fundamentos de machine learning (ML) e inteligência artificial (IA). Você explorará as conexões entre IA, ML, aprendizado profundo e o campo emergente da inteligência artificial generativa (IA generativa). Você desenvolverá uma compreensão sólida dos termos fundamentais da IA, estabelecendo as bases para uma análise mais aprofundada sobre esses conceitos. Além disso, você aprenderá sobre uma seleção de serviços da Amazon Web Services (AWS) que usam recursos de IA e ML. Você obterá informações práticas sobre como essas ferramentas podem ser usadas para resolver problemas reais e impulsionar a inovação em vários setores. •Nível do curso: básico •Duração: 1 hora Observação: Este curso tem transcrições/legendas traduzidas. A narração está em inglês. Para exibir as legendas, clique no botão CC no canto inferior direito do player. Atividades: Este curso inclui elementos interativos, instruções de texto, gráficos ilustrativos e testes de conhecimento. Objetivos do curso: Neste curso, você aprenderá a: •Identificar as semelhanças e diferenças entre IA, ML, aprendizado profundo e IA generativa. •Definir os termos e conceitos fundamentais de IA e ML. •Explicar os diferentes tipos de dados usados para treinar modelos de IA. •Definir aprendizado supervisionado, não supervisionado e por reforço. •Definir redes neurais. •Definir termos e conceitos fundamentais de IA generativa. •Descrever o ciclo de vida do modelo de base (FM). •Definir três tipos principais de FMs: modelos de linguagem grande, modelos de difusão e modelos multimodais. •Identificar as capacidades e os benefícios de usar os serviços da AWS para soluções de IA. Público-alvo: Este curso se destina a: •Indivíduos interessados em machine learning e inteligência artificial, independentemente de uma função específica Pré-requisitos: Recomendamos que os participantes do curso tenham os seguintes conhecimentos: •Conhecimento fundamental dos serviços da AWS •Conhecimento básico dos conceitos de IA e ML Conteúdo do curso: Seção 1: Introdução •Como usar este curso •Introdução Seção 2: Fundamentos da inteligência artificial •Fundamentos de machine learning •Fundamentos do aprendizado profundo •Fundamentos da IA generativa •Teste de conhecimento Seção 3: Serviços da AWS •Infraestrutura e tecnologias da AWS •Ponto de teste de conhecimento Seção 4: Conclusão •Recursos •Entrar em contato conosco
